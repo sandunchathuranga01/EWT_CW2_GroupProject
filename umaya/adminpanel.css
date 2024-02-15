@@ -1,0 +1,216 @@
+/* Font Import - Add this to import Source Sans Pro font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #158F81; /* Shadow color */
+}
+
+.panel {
+  display: flex;
+  width: 1222px; /* Adjust the width of the panel as needed */
+  height: 650px; /* Adjust the height of the panel as needed */
+  background-color: #5EBBB3; /* Panel color */
+  border-radius: 20px; /* Border radius for rounded corners */
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7); /* Shadow properties */
+}
+
+.left-column {
+  flex: 1; /* Occupy 1/4 of the panel width */
+  background-color: #CDE5DF; /* Left column color */
+  border-top-left-radius: 20px; /* Adjust the border radius for top left corner */
+  border-bottom-left-radius: 20px; /* Adjust the border radius for bottom left corner */
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Adjust alignment */
+  align-items: center; /* Center content horizontally */
+}
+
+.right-column {
+  flex: 3; /* Occupy 3/4 of the panel width */
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex; /* Add display flex to align items in a row */
+  flex-direction: column; /* Maintain column direction for other content */
+}
+
+.logo {
+  width: 60px; /* Adjust the width of the logo as needed */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.header {
+  font-size: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.sub-header {
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-bottom: 20px;
+}
+
+.separator {
+  height: 4px;
+  width: 100%;
+  background-color: #565454; /* Thick line color */
+  margin-bottom: 20px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-text {
+  font-size: 17px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  font-weight: bold; /* Make the navigation panel text bold */
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.nav-icon {
+  width: 20px; /* Adjust the width of the navigation icons as needed */
+  height: auto;
+  margin-right: 20px;
+}
+
+.status {
+  display: flex;
+  align-items: center; /* Center content horizontally */
+  flex-direction: column; /* Adjust alignment */
+  margin-top: auto;
+}
+
+.status-icon {
+  width: 60px; /* Adjust the width of the status icon as needed */
+  height: auto;
+  margin-bottom: 5px; /* Add margin for spacing between logo and text */
+}
+
+.status-text {
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  font-weight: bold; /* Make the "Online | Offline" text bold */
+  text-align: center;
+}
+
+.gray-rectangle {
+  position: relative;
+  width: 90%;
+  height: 250px; /* Adjust the height as needed */
+  background-color: #ccc;
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row; /* Adjusted to row */
+  justify-content: flex-start; /* Adjusted to flex-start */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.gray-rectangle h2 {
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Styling for the first square with square1 class */
+.square1 {
+  flex: 1;
+  background-color: #ccc;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-right: 20px; /* Adjust the space between squares */
+  margin-left: 30px;
+  height: 250px;
+  width: 250px;
+}
+
+.square1 h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.square1 .shadow-text {
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin-bottom: 5px;
+}
+
+.square1 .sub-heading {
+  font-size: 16px;
+  color: rgb(15, 14, 14);
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Styling for the second square with square2 class */
+.square2 {
+  flex: 1;
+  background-color: #ccc;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-right: 20px; /* Adjust the space between squares */
+  margin-left: 30px;
+  height: 250px;
+  width: 250px;
+}
+
+.square2 h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.square2 .shadow-text {
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin-bottom: 5px;
+}
+
+.square2 .sub-heading {
+  font-size: 16px;
+  color: rgb(15, 14, 14);
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+/* Add the following styles to your existing CSS */
+.page-down-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.page-down-button img {
+  width: 40px; /* Adjust the size as needed */
+  height: 40px;
+}

@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #158F81; /* Shadow color */
+}
+
+.panel {
+    width: 1222px; /* Adjust the width of the panel as needed */
+    height: 650px; /* Adjust the height of the panel as needed */
+    background-color: #5EBBB3; /* Panel color */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Shadow properties */
+    border-radius: 15px; /* Border radius for rounded corners */
+    display: flex; /* Display as flex container */
+}
+
+.left-column {
+    flex: 1; /* Take up remaining space */
+    background-color: #5EBBB3; /* Left column color */
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px; 
+}
+
+.text {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000;
+    line-height: 1.25;
+    margin: 0;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: left; /* Center the text */
+    margin-bottom: 30px; /* Adjust the margin-bottom as needed */
+    margin-left: 90px;
+    margin-right: 50px;
+}
+
+.text1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000;
+    line-height: 1;
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Adjust the margin-bottom as needed */
+    margin-top: 20px;
+}
+
+.left-column img {
+    max-width: 55%;
+    border-radius: 15px; /* Border radius for image */
+}
+
+.right-column {
+    flex: 1;
+    background-color: #fff;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+.signin-button {
+    width: 390px;
+    height: 60px;
+    background-color: #158F81; /* Adjust color as needed */
+    color: #fff;
+    border-radius: 50px;
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1;
+    margin: 0;
+    font-size: 27px;
+    font-weight: bold;
+    text-align: center; /* Center the text */
+}

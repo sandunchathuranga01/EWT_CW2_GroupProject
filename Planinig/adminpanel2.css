@@ -1,0 +1,271 @@
+/* Font Import - Add this to import Source Sans Pro font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #158F81; /* Shadow color */
+}
+
+.panel {
+  display: flex;
+  width: 1222px; /* Adjust the width of the panel as needed */
+  height: 650px; /* Adjust the height of the panel as needed */
+  background-color: #5EBBB3; /* Panel color */
+  border-radius: 20px; /* Border radius for rounded corners */
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7); /* Shadow properties */
+}
+
+.left-column {
+  flex: 1; /* Occupy 1/4 of the panel width */
+  background-color: #CDE5DF; /* Left column color */
+  border-top-left-radius: 20px; /* Adjust the border radius for top left corner */
+  border-bottom-left-radius: 20px; /* Adjust the border radius for bottom left corner */
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Adjust alignment */
+  align-items: center; /* Center content horizontally */
+}
+
+.right-column {
+  flex: 3; /* Occupy 3/4 of the panel width */
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex; /* Add display flex to align items in a row */
+  flex-direction: column; /* Maintain column direction for other content */
+}
+
+.logo {
+  width: 60px; /* Adjust the width of the logo as needed */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.header {
+  font-size: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Add the following styles to your existing CSS */
+.sub-header-small {
+    color: white;
+    font-size: 14px; /* Adjust the font size as needed */
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 10px; /* Adjust the margin as needed */
+  }
+
+.white-header {
+  color: white; /* Set the text color to white */
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 20px; /* Adjust the margin to move the header up */
+}
+.sub-header {
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-bottom: 20px;
+}
+
+.separator {
+  height: 4px;
+  width: 100%;
+  background-color: #565454; /* Thick line color */
+  margin-bottom: 20px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+.nav-text {
+  font-size: 17px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  font-weight: bold; /* Make the navigation panel text bold */
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+/* Add the following CSS to your existing styles */
+.navigation a {
+  text-decoration: none; /* Remove underline from links */
+}
+.nav-icon {
+  width: 20px; /* Adjust the width of the navigation icons as needed */
+  height: auto;
+  margin-right: 20px;
+}
+
+.nav-text {
+  font-size: 17px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black; /* Text color */
+  font-weight: bold;
+}
+
+.status {
+  display: flex;
+  align-items: center; /* Center content horizontally */
+  flex-direction: column; /* Adjust alignment */
+  margin-top: auto;
+}
+
+.status-icon {
+  width: 60px; /* Adjust the width of the status icon as needed */
+  height: auto;
+  margin-bottom: 5px; /* Add margin for spacing between logo and text */
+}
+
+.status-text {
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  font-weight: bold; /* Make the "Online | Offline" text bold */
+  text-align: center;
+}
+
+.upper-right {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+/* Add the following styles to your existing CSS */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.result-button {
+    flex: 1;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 15px;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 50px;
+  }
+  .result-button .nav-icon {
+    width: 40px; /* Adjust the width of the navigation icons as needed */
+    height: 40px; /* Adjust the height of the navigation icons as needed */
+    margin-right: 10px;
+  }
+  /* Bold and increase size for the number "22" and "31" */
+.button-number {
+    font-weight: bold;
+    font-size: 30px; /* Adjust the font size as needed */
+  }
+  .button-info {
+    text-align:left;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  /* Bold and increase size for the number "22" and "31" */
+  .button-number {
+    text-align: right;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .result-button:nth-child(3) {
+    background-color: pink; /* Set the background color for Button 3 to pink */
+  }
+
+  .result-button:nth-child(3) .button-number {
+    color: red; /* Set the text color for the number "01" in Button 3 to red */
+  }
+  
+.upper-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .bell-icon {
+    height: auto;
+    width: 30%;
+    margin-right: 40px; /* Adjust the margin as needed */
+  }
+  
+  .email-circle {
+    width: 30px; /* Adjust the width of the circle as needed */
+    height: 30px; /* Adjust the height of the circle as needed */
+    background-color: #ccc; /* Set the background color of the circle */
+    border-radius: 50%; /* Make it a circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 70px;
+  }
+  
+  .email-address {
+    color: white; /* Set the text color to white */
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px; /* Adjust the font size as needed */
+    margin-right: -100px;
+  }
+  /* Add the following styles to your existing CSS */
+
+.disposal-places-text {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top:25px; /* Adjust margin as needed */
+    margin-left: 40px;
+  }
+  .map-image {
+    width: 90%; /* Adjust the width of the map image as needed */
+    height: 60%;
+    margin-top: 20px; /* Adjust margin as needed */
+    margin-left: 30px;
+  }
+  
+  .bottom-images {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bottom-images img {
+    width: 30px; /* Adjust the width of the clickable images as needed */
+    height: 30px; /* Adjust the height of the clickable images as needed */
+    margin-bottom: 40px; /* Adjust margin as needed */
+    cursor: pointer;
+    margin-left: 45px;
+  }
+/* Add the following styles to your existing CSS */
+.page-down-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.page-down-button img {
+  width: 40px; /* Adjust the size as needed */
+  height: 40px;
+}

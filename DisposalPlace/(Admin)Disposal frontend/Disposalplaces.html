@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shadow and Panel</title>
+  <link rel="stylesheet" href="Disposalplaces.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/employee.js"></script>
+
+<body>
+  <div class="panel">
+    <div class="left-column">
+      <img class="logo" src="pictures/EWT-removebg 1.png" alt="EWT System Logo">
+      <div class="header">EWT System</div>
+      <div class="sub-header">Eco Waste Tracking</div>
+      <div class="separator"></div>
+      
+      <div class="navigation">
+        <div class="nav-item">
+          <a href="#waste-collector-panel" class="nav-text">
+            ADMIN PANEL
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#settings" class="nav-text">
+            <img class="nav-icon" src="pictures/cog.svg" alt="Settings Icon">
+            Settings
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#smart-bin" class="nav-text">
+            <img class="nav-icon" src="pictures/bin.png" alt="Smart Bin Icon">
+            Smart Bin
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#view-schedule" class="nav-text">
+            <img class="nav-icon" src="pictures/waste.png" alt="waste collector icon">
+            Waste Collector
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#view-disposal-place" class="nav-text">
+            <img class="nav-icon" src="pictures/Group (1).png" alt="client icon">
+            Client
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#requests" class="nav-text">
+            <img class="nav-icon" src="pictures/Group (2).png" alt="report icon">
+            Report
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#income" class="nav-text">
+            <img class="nav-icon" src="pictures/financial.png" alt="financial Icon">
+            Financial
+          </a>
+        </div>
+      </div>
+      <div class="status">
+      </div>
+    </div>
+    <div class="right-column">
+        <!-- Add a class to the header -->
+      <div class="header white-header">Disposal Places</div>
+      <div class="upper-right">
+        <a href="#your-bell-link" class="bell-link">
+          <img class="bell-icon" src="pictures/bell-notification.png" alt="Bell Icon">
+        </a>
+      </div>
+      <!-- Button Container below the header -->
+      <div class="button-container">
+   <button class="result-button">
+    <img class="nav-icon" src="pictures/Vector.png" alt="Payment Icon">
+    <div class="button-info">
+      <div class="button-description">Register New Place</div>
+    </div>
+        <!-- Add the plus image here -->
+    <img class="plus-image" src="pictures/mingcute_plus-line.png" alt="Plus Icon">
+    </button>
+  </div>
+
+
+
+  <div class="container mt-5 col-6">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Employee ID</label>
+        <input type="text" disabled class="form-control" id="exampleFormControlInput1" placeholder="Employee ID">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput2" class="form-label">Employee Name</label>
+        <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Employee Name">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput3" class="form-label">Employee Address</label>
+        <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="Employee Address">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput4" class="form-label">Employee Number</label>
+        <input type="number" class="form-control" id="exampleFormControlInput4" placeholder="Employee Number">
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-primary" onclick="saveEmployee()">Save</button>
+    </div>
+</div>
+  
+
+
+
+
+</div> 
+</div>
+</body>
+</html>

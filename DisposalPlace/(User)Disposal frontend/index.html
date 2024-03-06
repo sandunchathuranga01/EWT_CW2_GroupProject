@@ -1,0 +1,65 @@
+<html>
+<head>
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", {
+            "packages": ["map"],
+            "mapsApiKey": "AIzaSyBSoQrR3G-RybhYs3rwFMaDvJbPs-dgod4"
+        });
+
+        google.charts.setOnLoadCallback(getDisposalPlaces);
+        google.charts.setOnLoadCallback(drawChart);
+
+        function getDisposalPlaces() {
+            $.ajax({
+                method: "get",
+                url: "http://localhost:8080/api/v1/disposal_place/getAllDisposalPlaces",
+                async: true,
+                success: function (data) {
+                    if (data.code === "00") {
+                        // Create data array for the map
+                        let mapData = data.content.map(disposal => [disposal.lat, disposal.lng, disposal.address]);
+
+                        // Convert the data array to Google DataTable
+                        var dataTable = google.visualization.arrayToDataTable([
+                            ['Lat', 'Long', 'Address'],
+                            ...mapData
+                        ]);
+
+                        // Create map and draw it
+                        var map = new google.visualization.Map(document.getElementById('map_div'));
+                        map.draw(dataTable, {
+                            showTooltip: true,
+                            showInfoWindow: true
+                        });
+                    }
+                }
+            });
+        }
+        /*function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Lat', 'Long', 'Name'],
+                [19.0760,  72.8777, 'Mumbai'],
+                [18.5204, 73.8567, 'Pune'],
+                [19.1176, 72.9060, 'Powai'],
+            ]);
+
+            var map = new google.visualization.Map(document.getElementById('map_div'));
+            map.draw(data, {
+                showTooltip: true,
+                showInfoWindow: true
+            });
+        }*/
+    </script>
+</head>
+
+<body>
+<h1>hello</h1>
+<div id="map_div" style="width: 800px; height: 700px"></div>
+</body>
+</html>
+
+

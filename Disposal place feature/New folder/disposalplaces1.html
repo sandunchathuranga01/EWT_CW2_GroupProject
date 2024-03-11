@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shadow and Panel</title>
+  <link rel="stylesheet" href="disposalplaces1.css">
+</head>
+<body>
+  <div class="panel">
+    <div class="left-column">
+      <img class="logo" src="pictures/EWT-removebg 1.png" alt="EWT System Logo">
+      <div class="header">EWT System</div>
+      <div class="sub-header">Eco Waste Tracking</div>
+      <div class="separator"></div>
+      
+      <div class="navigation">
+        <div class="nav-item">
+          <a href="#waste-collector-panel" class="nav-text">
+            ADMIN PANEL
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#settings" class="nav-text">
+            <img class="nav-icon" src="pictures/cog.svg" alt="Settings Icon">
+            Settings
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#smart-bin" class="nav-text">
+            <img class="nav-icon" src="pictures/bin.png" alt="Smart Bin Icon">
+            Smart Bin
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#view-schedule" class="nav-text">
+            <img class="nav-icon" src="pictures/waste.png" alt="waste collector icon">
+            Waste Collector
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#view-disposal-place" class="nav-text">
+            <img class="nav-icon" src="pictures/Group (1).png" alt="client icon">
+            Client
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#requests" class="nav-text">
+            <img class="nav-icon" src="pictures/Group (2).png" alt="report icon">
+            Report
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#income" class="nav-text">
+            <img class="nav-icon" src="pictures/financial.png" alt="financial Icon">
+            Financial
+          </a>
+        </div>
+      </div>
+      <div class="status">
+      </div>
+    </div>
+    <div class="right-column">
+        <!-- Add a class to the header -->
+      <div class="header white-header">All Disposal Places</div>
+      <div class="upper-right">
+        <a href="#your-bell-link" class="bell-link">
+          <img class="bell-icon" src="pictures/bell-notification.png" alt="Bell Icon">
+        </a>
+      </div>
+
+      <div class="location-inputs">
+        <!-- Dynamic buttons will be populated here -->
+      </div>
+      <div class="scrollable">
+        <div class="location-inputs">
+          <!-- Input fields will be populated dynamically -->
+        </div>
+      </div>
+
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close-btn" onclick="closePopup()">&times;</span>
+          <div id="popup-details"></div>
+
+          <div class="submit-button">
+            <button type="button" onclick="deleteSelectedButton()">Delete</button>
+          </div>
+        </div>
+      </div>
+
+    
+
+    </div>
+  </div>
+
+  <script>
+   document.addEventListener("DOMContentLoaded", function() {
+  // Function to load form data into buttons
+  function loadFormDataIntoButtons(formDataArray) {
+    const locationInputsContainer = document.querySelector('.location-inputs');
+    locationInputsContainer.innerHTML = '';
+
+    formDataArray.forEach(function(formData, index) {
+      const button = document.createElement('button');
+      button.className = 'location-button';
+      button.textContent = `Location ID: ${formData.Location_ID}`;
+      button.setAttribute('data-details', JSON.stringify(formData));
+
+      locationInputsContainer.appendChild(button);
+
+      button.addEventListener('click', function() {
+        const buttons = document.querySelectorAll('.location-button');
+        buttons.forEach(btn => {
+          btn.classList.remove('selected');
+        });
+
+        button.classList.add('selected');
+
+        const details = JSON.parse(button.getAttribute('data-details'));
+        const popupDetails = document.getElementById('popup-details');
+        popupDetails.innerHTML = `<p>Location ID: ${details.Location_ID}</p><p>Location ID/Address: ${details.Location_ID_Address}</p><p>Name: ${details.Name}</p>`;
+        document.getElementById('popup').style.display = 'flex';
+      });
+    });
+  }
+
+  let formDataArray = JSON.parse(localStorage.getItem('formData')) || [];
+  loadFormDataIntoButtons(formDataArray);
+
+  document.querySelector('.submit-button button').addEventListener('click', deleteSelectedButton);
+
+  function deleteSelectedButton() {
+    const selectedButton = document.querySelector('.location-button.selected');
+    if (selectedButton) {
+      selectedButton.remove();
+      const updatedFormDataArray = formDataArray.filter(formData => {
+        return formData.Location_ID !== JSON.parse(selectedButton.getAttribute('data-details')).Location_ID;
+      });
+      localStorage.setItem('formData', JSON.stringify(updatedFormDataArray));
+      formDataArray = updatedFormDataArray;
+      document.getElementById('popup').style.display = 'none';
+    }
+  }
+});
+
+function closePopup() {
+  document.getElementById('popup').style.display = 'none';
+}
+</script>
+</body>
+</html>

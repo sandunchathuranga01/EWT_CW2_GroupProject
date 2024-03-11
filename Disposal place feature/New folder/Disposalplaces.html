@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shadow and Panel</title>
+  <link rel="stylesheet" href="Disposalplaces.css">
+</head>
+<body>
+  <div class="panel">
+    <div class="left-column">
+      <img class="logo" src="pictures/EWT-removebg 1.png" alt="EWT System Logo">
+      <div class="header">EWT System</div>
+      <div class="sub-header">Eco Waste Tracking</div>
+      <div class="separator"></div>
+      
+      <div class="navigation">
+        <div class="nav-item">
+          <a href="#waste-collector-panel" class="nav-text">
+            ADMIN PANEL
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#settings" class="nav-text">
+            <img class="nav-icon" src="pictures/cog.svg" alt="Settings Icon">
+            Settings
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#smart-bin" class="nav-text">
+            <img class="nav-icon" src="pictures/bin.png" alt="Smart Bin Icon">
+            Smart Bin
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#view-schedule" class="nav-text">
+            <img class="nav-icon" src="pictures/waste.png" alt="waste collector icon">
+            Waste Collector
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#view-disposal-place" class="nav-text">
+            <img class="nav-icon" src="pictures/Group (1).png" alt="client icon">
+            Client
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#requests" class="nav-text">
+            <img class="nav-icon" src="pictures/Group (2).png" alt="report icon">
+            Report
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#income" class="nav-text">
+            <img class="nav-icon" src="pictures/financial.png" alt="financial Icon">
+            Financial
+          </a>
+        </div>
+      </div>
+      <div class="status">
+      </div>
+    </div>
+    <div class="right-column">
+        <!-- Add a class to the header -->
+      <div class="header white-header">Disposal Places</div>
+      <div class="upper-right">
+        <a href="#your-bell-link" class="bell-link">
+          <img class="bell-icon" src="pictures/bell-notification.png" alt="Bell Icon">
+        </a>
+      </div>
+      <!-- Button Container below the header -->
+      <div class="button-container">
+   <button class="result-button">
+    <img class="nav-icon" src="pictures/Vector.png" alt="Payment Icon">
+    <div class="button-info">
+      <div class="button-description">Register New Place</div>
+    </div>
+        <!-- Add the plus image here -->
+    <img class="plus-image" src="pictures/mingcute_plus-line.png" alt="Plus Icon">
+    </button>
+  </div>
+  <form id="disposal-form" action="disposalplaces1.html" method="get">
+    <div class="location-inputs">
+      <input type="text" class="location-input" placeholder="Location ID" name="Location_ID" required>
+      <input type="text" class="location-input" placeholder="Location ID/Address" name="Location_ID_Address" required>
+      <input type="text" class="location-input" placeholder="Name" name="Name" required>
+     
+    </div>
+    <div class="submit-button">
+      <button type="submit">Save</button>
+    </div>
+  </form>
+</div> 
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById('disposal-form');
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+      
+      // Gather form data
+      const formData = new FormData(form);
+      const formDataObject = {};
+      formData.forEach((value, key) => {
+        formDataObject[key] = value;
+      });
+      
+      // Store form data in localStorage
+      let formDataArray = JSON.parse(localStorage.getItem('formData')) || [];
+      formDataArray.push(formDataObject);
+      localStorage.setItem('formData', JSON.stringify(formDataArray));
+      
+      // Redirect to disposalplaces1.html
+      window.location.href = "disposalplaces1.html";
+    });
+  });
+</script>
+</body>
+</html>

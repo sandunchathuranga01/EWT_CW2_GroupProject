@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shadow and Panel</title>
+  <link rel="stylesheet" href="smartbin form.css">
+  <script src="jquery-3.7.1.min.js"></script>
+  <script src="Smartbinplaces.js"></script>
+  
+</head>
+<body>
+  <div class="panel">
+    <div class="left-column">
+      <img class="logo" src="pictures/EWT-removebg 1.png" alt="EWT System Logo">
+      <div class="header">EWT System</div>
+      <div class="sub-header">Eco Waste Tracking</div>
+      <div class="separator"></div>
+      
+      <div class="navigation">
+        <div class="nav-item">
+          <a href="#waste-collector-panel" class="nav-text">
+            ADMIN PANEL
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#settings" class="nav-text">
+            <img class="nav-icon" src="pictures/cog.svg" alt="Settings Icon">
+            Settings
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#smart-bin" class="nav-text">
+            <img class="nav-icon" src="pictures/bin.png" alt="Smart Bin Icon">
+            Smart Bin
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#view-schedule" class="nav-text">
+            <img class="nav-icon" src="pictures/waste.png" alt="waste collector icon">
+            Waste Collector
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#view-disposal-place" class="nav-text">
+            <img class="nav-icon" src="pictures/Group (1).png" alt="client icon">
+            Client
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#requests" class="nav-text">
+            <img class="nav-icon" src="pictures/Group (2).png" alt="report icon">
+            Report
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#income" class="nav-text">
+            <img class="nav-icon" src="pictures/financial.png" alt="financial Icon">
+            Financial
+          </a>
+        </div>
+      </div>
+      <div class="status">
+      </div>
+    </div>
+    <div class="right-column">
+        <!-- Add a class to the header -->
+      <div class="header white-header">SmartBin</div>
+      <div class="upper-right">
+        <a href="#your-bell-link" class="bell-link">
+          <img class="bell-icon" src="pictures/bell-notification.png" alt="Bell Icon">
+        </a>
+      </div>
+      <!-- Button Container below the header -->
+      <div class="button-container">
+   <button class="result-button">
+    <img class="nav-icon" src="pictures/Vector.png" alt="Payment Icon">
+    <div class="button-info">
+      <div class="button-description">Register New Place</div>
+    </div>
+        <!-- Add the plus image here -->
+    <img class="plus-image" src="pictures/mingcute_plus-line.png" alt="Plus Icon">
+    </button>
+  </div>
+  <form id="disposal-form" action="smartbinform2.html" method="get">
+    <div class="location-inputs">
+      <div class="location-input-group">
+        <input type="text" class="location-input" placeholder="BinID" name="BinID" required>
+        <input type="text" class="location-input" placeholder="Bin Capacity" name="Bin Capacity" required>
+        
+      </div>
+     
+      <input type="text" class="location-input" placeholder="Bin location ID/Address" name="Bin location ID/Address" required>
+       <input type="text" class="location-input" placeholder="Google map Location ID" name="Google map Location ID" required>
+
+    </div>
+    <div class="submit-button">
+      <button type="button" class="btn btn-primary" onclick="saveSmartBinPlace()">Save</button>
+      <a href="smartbinform2.html"><button type="button" class="btn btn-primary">View SmartBin Places</button></a>
+    </div>
+  </form>
+
+    <!-- Page Down Button -->
+    <div class="page-down-button">
+        <img src="pictures/iconoir_page-down.png" alt="Page Down Icon">
+      </div>
+  
+</div> 
+</div>
+
+
+</body>
+</html>

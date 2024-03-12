@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shadow and Panel</title>
+  <link rel="stylesheet" href="dis.css">
+</head>
+<body>
+  <div class="panel">
+    <div class="left-column">
+      <img class="logo" src="pictures/EWT-removebg 1.png" alt="EWT System Logo">
+      <div class="header">EWT System</div>
+      <div class="sub-header">Eco Waste Tracking</div>
+      <div class="separator"></div>
+      
+      <div class="navigation">
+        <div class="nav-item">
+          <a href="#waste-collector-panel" class="nav-text">
+            Waste Collector Panel
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#settings" class="nav-text">
+            <img class="nav-icon" src="pictures/cog.svg" alt="Settings Icon">
+            Settings
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#smart-bin" class="nav-text">
+            <img class="nav-icon" src="pictures/bin.png" alt="Smart Bin Icon">
+            Smart Bin
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#view-schedule" class="nav-text">
+            <img class="nav-icon" src="pictures/mingcute_schedule-fill.png" alt="View Schedule Icon">
+            View Schedule
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#view-disposal-place" class="nav-text">
+            <img class="nav-icon" src="pictures/location-pin.png" alt="View Disposal Place Icon">
+            View Disposal Place
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#requests" class="nav-text">
+            <img class="nav-icon" src="pictures/pencil-write.png" alt="Requests Icon">
+            Requests
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#income" class="nav-text">
+            <img class="nav-icon" src="pictures/tdesign_money.png" alt="Income Icon">
+            Income
+          </a>
+        </div>
+      </div>
+      
+      <div class="status">
+        <img class="status-icon" src="pictures/clarity_power-solid.png" alt="Online/Offline Icon">
+  
+      </div>
+      <p>Online | Offline </p>
+    </div>
+    <div class="right-column">
+      <div class="header white-header">View Disposal Places</div>
+      <div class="upper-right">
+        <a href="#your-bell-link" class="bell-link">
+          <img class="bell-icon" src="pictures/bell-notification.png" alt="Bell Icon">
+        </a>
+      </div>
+      <div class="search-area">
+        <form id="searchForm">
+          <div class="search-box">
+            <img class="search-icon" src="pictures/search-1.png" alt="Search Icon">
+            <input type="text" placeholder="   Search Here..." class="search-text" id="searchInput">
+          </div>
+        </form>
+      </div>
+       
+       <!-- Result Button Container -->
+       <div class="button-container">
+        <!-- Result Button 1 -->
+        <button class="result-button">
+          <img class="location-icon" src="pictures/mdi_locations.png" alt="Location Icon">
+          <div class="button-info">
+            <div class="button-number">22</div>
+            <div class="button-description">Disposal locations have</div>
+          </div>
+        </button>
+        <!-- Result Button 2 -->
+        <button class="result-button">
+          <img class="bin-icon" src="pictures/Vector.png" alt="Bin Icon">
+          <div class="button-info">
+            <div class="button-number">31</div>
+            <div class="button-description">Online Smart Bins</div>
+          </div>
+        </button>
+        
+      </div>
+      
+      <div class="photo-container">
+        <img class="photo" src="pictures/Rectangle 99.png" alt="Description of the photo">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Function to get the search query parameter from the URL
+      function getSearchQuery() {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get('q');
+      }
+
+      // Function to set the search query as the value of the search input
+      function setSearchQuery() {
+        const searchInput = document.getElementById('searchInput');
+        const searchQuery = getSearchQuery();
+        if (searchQuery) {
+          searchInput.value = searchQuery;
+        }
+      }
+
+      // Call the function to set the search query in the search input when the DOM content is loaded
+      setSearchQuery();
+    });
+  </script>
+</body>
+</html>

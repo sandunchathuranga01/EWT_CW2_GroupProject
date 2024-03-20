@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #158F81; /* Shadow color */
+}
+
+.panel {
+    width: 1222px; 
+    height: 650px; 
+    background-color: #5EBBB3; /* Panel color */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Shadow properties */
+    border-radius: 15px; /* Border radius for rounded corners */
+    display: flex; /* Display as flex container */
+}
+
+.left-column {
+    flex: 1; /* Take up remaining space */
+    background-color: #5EBBB3; /* Left column color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px; 
+}
+
+.left-column img {
+    max-width: 80%;
+    border-radius: 15px; /* Border radius for image */
+}
+
+.right-column {
+    flex: 1;
+    background-color: #fff;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+.main-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    align-self: flex-start; 
+}
+
+.rectangle {
+    width: 500px;
+    height: 75px;
+    background-color: #CDE5DF;
+    color: #000;
+    border-radius: 0px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Add relative positioning */
+}
+
+.inner-content {
+    display: flex;
+    align-items: center;
+    position: absolute; /* Add absolute positioning */
+    left: 20px; /* Adjust the left position */
+}
+
+.inner-content img {
+    max-width: 80px; 
+    margin-right: 10px; 
+}
+
+.inner-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    line-height: 1;
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center; /* Center the text */
+}
+
+.inner-text1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    line-height: 1;
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center; /* Center the text */
+    margin-left: 20px;
+}
+
+.forgot-password-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+    margin-top: 15px;
+    margin-right: 45px;
+    font-size: 15px;
+    font-weight: bold;
+    align-self: flex-end; /* Align to the right */
+}
+
+.signin-button {
+    width: 400px;
+    height: 65px;
+    background-color: #158F81; 
+    color: #fff;
+    border-radius: 50px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1;
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center; /* Center the text */
+}
+
+.privacy-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 65px;
+    margin-left: 65px;
+    text-align: center; /* Center the text */
+}
+
+
+.signup-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000;
+    margin-top: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left; /* Align the text to the left */
+    margin-right: 240px;
+}
+
+.signup {
+    font-family: 'Source Sans Pro', sans-serif;
+    color:  #158F81; 
+}

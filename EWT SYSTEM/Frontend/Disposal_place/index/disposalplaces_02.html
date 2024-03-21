@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shadow and Panel</title>
+  <link rel="stylesheet" href="../style/disposalplaces_02.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="../script/jquery-3.7.1.min.js"></script>
+  <script src="../script/DisposalPlace.js"></script>
+</head>
+<body>
+  <div class="panel">
+    <div class="left-column">
+      <img class="logo" src="pictures/EWT-removebg 1.png" alt="EWT System Logo">
+      <div class="header">EWT System</div>
+      <div class="sub-header">Eco Waste Tracking</div>
+      <div class="separator"></div>
+
+      <div class="navigation">
+        <div class="nav-item">
+          <a href="#waste-collector-panel" class="nav-text">
+            ADMIN PANEL
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#settings" class="nav-text">
+            <img class="nav-icon" src="pictures/cog.svg" alt="Settings Icon">
+            Settings
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#smart-bin" class="nav-text">
+            <img class="nav-icon" src="pictures/bin.png" alt="Smart Bin Icon">
+            Smart Bin
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#view-schedule" class="nav-text">
+            <img class="nav-icon" src="pictures/waste.png" alt="waste collector icon">
+            Waste Collector
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#view-disposal-place" class="nav-text">
+            <img class="nav-icon" src="pictures/Group (1).png" alt="client icon">
+            Client
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#income" class="nav-text">
+            <img class="nav-icon" src="pictures/financial.png" alt="financial Icon">
+            Financial
+          </a>
+        </div>
+      </div>
+      <div class="status">
+      </div>
+    </div>
+    <div class="right-column">
+        <!-- Add a class to the header -->
+      <div class="header white-header">All Disposal Places</div>
+      <div class="upper-right">
+        <a href="#your-bell-link" class="bell-link">
+          <img class="bell-icon" src="pictures/bell-notification.png" alt="Bell Icon">
+        </a>
+      </div>
+      <div class="mt-3">
+        <div class="table-section" >
+          <table class="table table-bordered border-primary table-hover" >
+            <thead class="table-dark">
+            <tr>
+              <th scope="col">LocationID</th>
+              <th scope="col">Name</th>
+              <th scope="col">Address</th>
+              <th scope="col">Latitude</th>
+              <th scope="col">Longitude</th>
+            </tr>
+            </thead>
+            <tbody id="disposalPlaseTable" onclick="rowClicked(event)">
+            </tbody>
+          </table>
+          <div class="submit-button">
+            <button type="button" class="btn btn-success" onclick="deleteDisposalPlace()" >Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>

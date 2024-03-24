@@ -1,4 +1,4 @@
-/* Font Import - Add this to import Source Sans Pro font */
+
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
 
 body {
@@ -9,42 +9,42 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #158F81; /* Shadow color */
+  background-color: #158F81 !important; 
 }
 
 .panel {
   display: flex;
-  width: 1222px; /* Adjust the width of the panel as needed */
-  height: 650px; /* Adjust the height of the panel as needed */
-  background-color: #5EBBB3; /* Panel color */
-  border-radius: 20px; /* Border radius for rounded corners */
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7); /* Shadow properties */
+  width: 1222px; 
+  height: 650px; 
+  background-color: #5EBBB3; 
+  border-radius: 20px; 
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7); 
 }
 
 .left-column {
-  flex: 1; /* Occupy 1/4 of the panel width */
-  background-color: #CDE5DF; /* Left column color */
-  border-top-left-radius: 20px; /* Adjust the border radius for top left corner */
-  border-bottom-left-radius: 20px; /* Adjust the border radius for bottom left corner */
+  flex: 1; 
+  background-color: #CDE5DF; 
+  border-top-left-radius: 20px; 
+  border-bottom-left-radius: 20px; 
   padding: 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Adjust alignment */
-  align-items: center; /* Center content horizontally */
+  justify-content: space-between; 
+  align-items: center; 
 }
 
 .right-column {
-  flex: 3; /* Occupy 3/4 of the panel width */
+  flex: 3; 
   padding: 20px;
   box-sizing: border-box;
   position: relative;
-  display: flex; /* Add display flex to align items in a row */
-  flex-direction: column; /* Maintain column direction for other content */
+  display: flex; 
+  flex-direction: column; 
 }
 
 .logo {
-  width: 60px; /* Adjust the width of the logo as needed */
+  width: 60px;
   height: auto;
   margin-bottom: 10px;
 }
@@ -55,33 +55,40 @@ body {
   font-weight: bold;
   margin-bottom: 5px;
 }
+
 .sub-header {
   font-size: 14px;
   font-family: 'Source Sans Pro', sans-serif;
   margin-bottom: 20px;
 }
+
 .white-header {
-    color: white; /* Set the text color to white */
+    color: white; 
     font-family: 'Source Sans Pro', sans-serif;
-    margin-top: 20px; /* Adjust the margin to move the header up */
+    margin-top: 20px; 
   }
+
 .separator {
-  height: 4px;
+  height: 2px;
   width: 100%;
-  background-color: #565454; /* Thick line color */
+  background-color: #565454; 
   margin-bottom: 20px;
 }
+
 
 .navigation {
   display: flex;
   flex-direction: column;
 }
+
 .nav-text {
   font-size: 17px;
   font-family: 'Source Sans Pro', sans-serif;
   color: black;
-  font-weight: bold; /* Make the navigation panel text bold */
+  font-weight: bold; 
+  white-space: nowrap; 
 }
+
 .nav-item {
   display: flex;
   align-items: center;
@@ -89,57 +96,48 @@ body {
 }
 
 .nav-icon {
-  width: 20px; /* Adjust the width of the navigation icons as needed */
+  width: 20px; 
   height: auto;
   margin-right: 20px;
 }
-/* Add the following CSS to your existing styles */
+
 .navigation a {
-  text-decoration: none; /* Remove underline from links */
+  text-decoration: none; 
 }
-.nav-text {
-  font-size: 17px;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: black; /* Text color */
-  font-weight: bold;
+
+.navigation a:hover {
+  text-decoration: underline; 
 }
-/* Add the following CSS to your existing styles */
-.navigation a {
-  text-decoration: none; /* Remove underline from links */
-}
+
+
 .status {
   display: flex;
-  align-items: center; /* Center content horizontally */
-  flex-direction: column; /* Adjust alignment */
+  align-items: center; 
+  flex-direction: column; 
   margin-top: auto;
 }
 
 .status-icon {
-  width: 60px; /* Adjust the width of the status icon as needed */
+  width: 60px;
   height: auto;
-  margin-bottom: 5px; /* Add margin for spacing between logo and text */
+  margin-bottom: 5px;
 }
 
 .status-text {
   font-size: 14px;
   font-family: 'Source Sans Pro', sans-serif;
   color: black;
-  font-weight: bold; /* Make the "Online | Offline" text bold */
+  font-weight: bold; 
   text-align: center;
 }
-.upper-right {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 10px;
-  }
-  
+
   .bell-icon {
-    width: 30px; /* Adjust the width of the bell icon as needed */
+    width: 50px; 
     height: auto;
     padding-right: 20px;
     padding-top: 20px;
   }
+
   .upper-right {
     position: absolute;
     top: 0;
@@ -148,10 +146,9 @@ body {
     display: flex;
     align-items: center;
   }
-/* Add the following styles to your existing CSS */
 .button-container {
     display: flex;
-    justify-content: center; /* Center the buttons */
+    justify-content: center; 
     margin-top: 40px;
     font-weight: bold;
   }
@@ -165,18 +162,16 @@ body {
     padding: 0px;
     font-size: 15px;
     border: none;
-    
-    cursor: pointer;
     border-radius: 10px;
-    margin-right: 20px; /* Adjust the margin between buttons */
+    margin-right: 20px; 
     margin-top: 5px;
     height: 70px;
     margin-bottom: 15px;
 }
   
   .result-button .nav-icon {
-    width: 40px; /* Adjust the width of the navigation icons as needed */
-    height: 40px; /* Adjust the height of the navigation icons as needed */
+    width: 40px; 
+    height: 40px; 
     margin-right: 15px;
     margin-left: 10px;
   }
@@ -189,292 +184,25 @@ body {
     font-weight: 300;
   }
   
-  /* Bold and increase size for the number "22" and "31" */
+  
   .button-number {
     text-align: right;
     font-weight: bold;
     font-size: 30px;
     color: red;
   }
-/* Add different background colors to each result button class */
-.result-button.schedule {
-  background-color: #FF5733; /* Orange color */
-}
+
 
 .result-button.disposal-places {
-  background-color: #33FF57; /* Green color */
-}
+  background-color: #CDE5DF; 
 
+}
+.button-number.disposal-places{
+  color:#000000
+}
 .result-button.payment {
-  background-color: #5733FF; /* Purple color */
+  background-color: #ffc0cb; 
 }
 
 
-  .information-client1 {
-    background-color: #ddd; /* Grey background color for the first rectangle */
-    padding: 10px; /* Padding for the rectangle */
-    margin-top: 10px; /* Adjust the margin from the previous rectangle */
-    display: flex;
-    align-items: center; /* Align items horizontally */
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 5px;
-}
-
-.information-client1 .client-image {
-    width: 30px; /* Adjust the width of the client image */
-    height: auto;
-    margin-right: 10px;
-}
-
-.information-client1 .client-details {
-    display: flex;
-    flex-direction: column;
-    margin-right: 40px; /* Adjust margin between client ID and buttons */
-}
-
-.information-client1 .client-id {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    margin-left: 40px;
-}
-
-.information-client1 .client-buttons-container {
-    display: flex;
-    align-items: center;     /* Align items horizontally */
-}
-
-.information-client1 .client-button {
-    background-color: #158F81; /* Green background color for buttons */
-    color: white; /* Text color */
-    padding: 10px;
-    margin-right: 110px; /* Adjust the margin between buttons */
-    border: none;
-    cursor: pointer;
-    border-radius: 20px;
-    text-align: center;
-    height: 50px;
-    width: 100px;
-}
-
-
-
-.information-client1 .stop-icon {
-    width: 20px; /* Adjust the width of the stop icon */
-    height: 20px;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-.information-client1 .suspend-button .suspend-button-text {
-    margin-left: 10px; /* Adjust the margin between the icon and text */
-}
-.information-client2 {
-    background-color: #ddd; /* Grey background color for the first rectangle */
-    padding: 10px; /* Padding for the rectangle */
-    margin-top: 10px; /* Adjust the margin from the previous rectangle */
-    display: flex;
-    align-items: center; /* Align items horizontally */
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 5px;
-}
-
-.information-client2 .client-image {
-    width: 30px; /* Adjust the width of the client image */
-    height: auto;
-    margin-right: 10px;
-}
-
-.information-client2 .client-details {
-    display: flex;
-    flex-direction: column;
-    margin-right: 40px; /* Adjust margin between client ID and buttons */
-}
-
-.information-client2 .client-id {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    margin-left: 40px;
-}
-
-.information-client2 .client-buttons-container {
-    display: flex;
-    align-items: center;     /* Align items horizontally */
-}
-
-.information-client2 .client-button {
-    background-color: #158F81; /* Green background color for buttons */
-    color: white; /* Text color */
-    padding: 10px;
-    margin-right: 110px; /* Adjust the margin between buttons */
-    border: none;
-    cursor: pointer;
-    border-radius: 20px;
-    text-align: center;
-    height: 50px;
-    width: 100px;
-}
-
-
-.information-client2 .stop-icon {
-    width: 20px; /* Adjust the width of the stop icon */
-    height: 20px;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-.information-client2 .suspend-button .suspend-button-text {
-    margin-left: 10px; /* Adjust the margin between the icon and text */
-}.information-client3 {
-    background-color: #ddd; /* Grey background color for the first rectangle */
-    padding: 10px; /* Padding for the rectangle */
-    margin-top: 10px; /* Adjust the margin from the previous rectangle */
-    display: flex;
-    align-items: center; /* Align items horizontally */
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 5px;
-}
-
-.information-client3 .client-image {
-    width: 30px; /* Adjust the width of the client image */
-    height: auto;
-    margin-right: 10px;
-}
-
-.information-client3 .client-details {
-    display: flex;
-    flex-direction: column;
-    margin-right: 40px; /* Adjust margin between client ID and buttons */
-}
-
-.information-client3 .client-id {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    margin-left: 40px;
-}
-
-.information-client3 .client-buttons-container {
-    display: flex;
-    align-items: center;     /* Align items horizontally */
-}
-
-.information-client3 .client-button {
-    background-color: #158F81; /* Green background color for buttons */
-    color: white; /* Text color */
-    padding: 10px;
-    margin-right: 110px; /* Adjust the margin between buttons */
-    border: none;
-    cursor: pointer;
-    border-radius: 20px;
-    text-align: center;
-    height: 50px;
-    width: 100px;
-}
-
-.information-client3 .stop-icon {
-    width: 20px; /* Adjust the width of the stop icon */
-    height: 20px;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-.information-client3 .suspend-button .suspend-button-text {
-    margin-left: 10px; /* Adjust the margin between the icon and text */
-}
-.information-client4 {
-    background-color: #ddd; /* Grey background color for the first rectangle */
-    padding: 10px; /* Padding for the rectangle */
-    margin-top: 10px; /* Adjust the margin from the previous rectangle */
-    display: flex;
-    align-items: center; /* Align items horizontally */
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 5px;
-}
-
-.information-client4 .client-image {
-    width: 30px; /* Adjust the width of the client image */
-    height: auto;
-    margin-right: 10px;
-}
-
-.information-client4 .client-details {
-    display: flex;
-    flex-direction: column;
-    margin-right: 40px; /* Adjust margin between client ID and buttons */
-}
-
-.information-client4 .client-id {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    margin-left: 40px;
-}
-
-.information-client4 .client-buttons-container {
-    display: flex;
-    align-items: center;     /* Align items horizontally */
-}
-
-.information-client4 .client-button {
-    background-color: #158F81; /* Green background color for buttons */
-    color: white; /* Text color */
-    padding: 10px;
-    margin-right: 110px; /* Adjust the margin between buttons */
-    border: none;
-    cursor: pointer;
-    border-radius: 20px;
-    text-align: center;
-    height: 50px;
-    width: 100px;
-}
-
-
-
-.information-client4 .stop-icon {
-    width: 20px; /* Adjust the width of the stop icon */
-    height: 20px;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-.information-client4 .suspend-button .suspend-button-text {
-    margin-left: 10px; /* Adjust the margin between the icon and text */
-}
-
-
-.photo-container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  z-index: 10;
-}
-
-.photo-container img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.information-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  box-sizing: border-box;
-  z-index: 20;
-}
-
+  

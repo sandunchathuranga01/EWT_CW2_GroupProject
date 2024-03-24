@@ -1,4 +1,4 @@
-/* Font Import - Add this to import Source Sans Pro font */
+
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
 
 body {
@@ -9,42 +9,42 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #158F81; /* Shadow color */
+  background-color: #158F81; 
 }
 
 .panel {
   display: flex;
-  width: 1222px; /* Adjust the width of the panel as needed */
-  height: 650px; /* Adjust the height of the panel as needed */
-  background-color: #5EBBB3; /* Panel color */
-  border-radius: 20px; /* Border radius for rounded corners */
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7); /* Shadow properties */
+  width: 1222px; 
+  height: 650px; 
+  background-color: #5EBBB3; 
+  border-radius: 20px; 
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7); 
 }
 
 .left-column {
-  flex: 1; /* Occupy 1/4 of the panel width */
-  background-color: #CDE5DF; /* Left column color */
-  border-top-left-radius: 20px; /* Adjust the border radius for top left corner */
-  border-bottom-left-radius: 20px; /* Adjust the border radius for bottom left corner */
+  flex: 1; 
+  background-color: #CDE5DF; 
+  border-top-left-radius: 20px; 
+  border-bottom-left-radius: 20px; 
   padding: 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Adjust alignment */
-  align-items: center; /* Center content horizontally */
+  justify-content: space-between; 
+  align-items: center; 
 }
 
 .right-column {
-  flex: 3; /* Occupy 3/4 of the panel width */
+  flex: 3; 
   padding: 20px;
   box-sizing: border-box;
   position: relative;
-  display: flex; /* Add display flex to align items in a row */
-  flex-direction: column; /* Maintain column direction for other content */
+  display: flex; 
+  flex-direction: column; 
 }
 
 .logo {
-  width: 60px; /* Adjust the width of the logo as needed */
+  width: 60px;
   height: auto;
   margin-bottom: 10px;
 }
@@ -55,33 +55,45 @@ body {
   font-weight: bold;
   margin-bottom: 5px;
 }
+
 .sub-header {
   font-size: 14px;
   font-family: 'Source Sans Pro', sans-serif;
   margin-bottom: 20px;
 }
+
 .white-header {
-    color: white; /* Set the text color to white */
+    color: white; 
     font-family: 'Source Sans Pro', sans-serif;
-    margin-top: 20px; /* Adjust the margin to move the header up */
+    margin-top: 20px; 
   }
+
 .separator {
-  height: 4px;
+  height: 2px;
   width: 100%;
-  background-color: #565454; /* Thick line color */
+  background-color: #565454; 
   margin-bottom: 20px;
+}
+
+.header,
+.sub-header,
+.separator {
+  white-space: nowrap; 
 }
 
 .navigation {
   display: flex;
   flex-direction: column;
 }
+
 .nav-text {
   font-size: 17px;
   font-family: 'Source Sans Pro', sans-serif;
   color: black;
-  font-weight: bold; /* Make the navigation panel text bold */
+  font-weight: bold; 
+  white-space: nowrap; 
 }
+
 .nav-item {
   display: flex;
   align-items: center;
@@ -89,42 +101,43 @@ body {
 }
 
 .nav-icon {
-  width: 20px; /* Adjust the width of the navigation icons as needed */
+  width: 20px; 
   height: auto;
   margin-right: 20px;
 }
-/* Add the following CSS to your existing styles */
+
 .navigation a {
-  text-decoration: none; /* Remove underline from links */
+  text-decoration: none; 
+}
+
+.navigation a:hover {
+  text-decoration: underline; 
 }
 .nav-text {
   font-size: 17px;
   font-family: 'Source Sans Pro', sans-serif;
-  color: black; /* Text color */
+  color: black; 
   font-weight: bold;
 }
-/* Add the following CSS to your existing styles */
-.navigation a {
-  text-decoration: none; /* Remove underline from links */
-}
+
 .status {
   display: flex;
-  align-items: center; /* Center content horizontally */
-  flex-direction: column; /* Adjust alignment */
+  align-items: center; 
+  flex-direction: column; 
   margin-top: auto;
 }
 
 .status-icon {
-  width: 60px; /* Adjust the width of the status icon as needed */
+  width: 60px;
   height: auto;
-  margin-bottom: 5px; /* Add margin for spacing between logo and text */
+  margin-bottom: 5px;
 }
 
 .status-text {
   font-size: 14px;
   font-family: 'Source Sans Pro', sans-serif;
   color: black;
-  font-weight: bold; /* Make the "Online | Offline" text bold */
+  font-weight: bold; 
   text-align: center;
 }
 .upper-right {
@@ -133,13 +146,14 @@ body {
     right: 0;
     margin: 10px;
   }
-
+  
   .bell-icon {
-    width: 30px; /* Adjust the width of the bell icon as needed */
+    width: 30px; 
     height: auto;
     padding-right: 20px;
     padding-top: 20px;
   }
+
   .upper-right {
     position: absolute;
     top: 0;
@@ -148,14 +162,14 @@ body {
     display: flex;
     align-items: center;
   }
-/* Add the following styles to your existing CSS */
-.button-container {
+
+  .button-container {
     display: flex;
-    justify-content: center; /* Center the buttons */
+    justify-content: center; 
     margin-top: 40px;
     font-weight: bold;
   }
-
+  
   .result-button {
     flex: 1;
     max-width: 250px;
@@ -165,22 +179,21 @@ body {
     padding: 0px;
     font-size: 15px;
     border: none;
-    background-color:#CDE5DF; /* Set the button background color */
-    cursor: pointer;
+    background-color:#CDE5DF;
     border-radius: 10px;
-    margin-right: 20px; /* Adjust the margin between buttons */
+    margin-right: 20px;
     margin-top: 5px;
     height: 70px;
     margin-bottom: 15px;
 }
-
+  
   .result-button .nav-icon {
-    width: 40px; /* Adjust the width of the navigation icons as needed */
-    height: 40px; /* Adjust the height of the navigation icons as needed */
+    width: 40px; 
+    height: 40px; 
     margin-right: 15px;
     margin-left: 10px;
   }
-
+  
   .button-info {
     text-align: center;
     padding-right: 20px;
@@ -188,27 +201,27 @@ body {
     font-size: 16px;
     font-weight: 300;
   }
-
-  /* Bold and increase size for the number "22" and "31" */
+  
   .button-number {
     text-align: right;
     font-weight: bold;
     font-size: 30px;
     color: rgb(0, 0, 0);
   }
+  
   .information-client1 {
-    background-color: #ddd; /* Grey background color for the first rectangle */
-    padding: 10px; /* Padding for the rectangle */
-    margin-top: 10px; /* Adjust the margin from the previous rectangle */
+    background-color: #ddd; 
+    padding: 10px; 
+    margin-top: 10px; 
     display: flex;
-    align-items: center; /* Align items horizontally */
+    align-items: center; 
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 5px;
 }
 
 .information-client1 .client-image {
-    width: 30px; /* Adjust the width of the client image */
+    width: 30px; 
     height: auto;
     margin-right: 10px;
 }
@@ -216,7 +229,7 @@ body {
 .information-client1 .client-details {
     display: flex;
     flex-direction: column;
-    margin-right: 40px; /* Adjust margin between client ID and buttons */
+    margin-right: 40px;
 }
 
 .information-client1 .client-id {
@@ -228,14 +241,14 @@ body {
 
 .information-client1 .client-buttons-container {
     display: flex;
-    align-items: center;     /* Align items horizontally */
+    align-items: center;
 }
 
 .information-client1 .client-button {
-    background-color: #158F81; /* Green background color for buttons */
-    color: white; /* Text color */
+    background-color: #158F81; 
+    color: white; 
     padding: 10px;
-    margin-right: 110px; /* Adjust the margin between buttons */
+    margin-right: 110px; 
     border: none;
     cursor: pointer;
     border-radius: 20px;
@@ -244,16 +257,43 @@ body {
     width: 100px;
 }
 
+.information-client1 .suspend-button {
+    background-color: #158F81; 
+    display: flex;
+    align-items: center;
+    margin-right: 110px;
+    border-radius: 10px;
+    cursor: pointer; 
+    border-radius: 20px;
+    height: 50px;
+}
+
 .information-client1 .stop-icon {
-    width: 20px; /* Adjust the width of the stop icon */
+    width: 20px; 
     height: 20px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-bottom: 2px;
+    vertical-align: middle; 
 }
 
 .information-client1 .suspend-button .suspend-button-text {
-    margin-left: 10px; /* Adjust the margin between the icon and text */
+    margin-left: 10px; 
 }
 
+.clients-container {
+  overflow-y: scroll;
+  max-height: calc(100% - 200px); 
+  margin-top: 20px;
+}
 
+.clients-container::-webkit-scrollbar {
+  width: 10px; 
+}
 
+.clients-container::-webkit-scrollbar-track {
+  background-color: #01D7C9; 
+}
+
+.clients-container::-webkit-scrollbar-thumb {
+  background-color: #0FA958;
+  border-radius: 5px; 
+}

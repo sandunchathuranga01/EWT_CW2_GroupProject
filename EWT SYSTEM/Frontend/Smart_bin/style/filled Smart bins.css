@@ -1,0 +1,299 @@
+/* Font Import - Add this to import Source Sans Pro font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #158F81 !important; 
+}
+
+.panel {
+  display: flex;
+  width: 1222px; 
+  height: 650px; 
+  background-color: #5EBBB3; 
+  border-radius: 20px; 
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7); 
+}
+
+.left-column {
+  flex: 1; 
+  background-color: #CDE5DF; 
+  border-top-left-radius: 20px; 
+  border-bottom-left-radius: 20px; 
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.right-column {
+  flex: 3; 
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex; 
+  flex-direction: column; 
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.header {
+  font-size: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.sub-header {
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-bottom: 20px;
+}
+
+.white-header {
+    color: white; 
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 20px; 
+  }
+
+.separator {
+  height: 2px;
+  width: 100%;
+  background-color: #565454; 
+  margin-bottom: 20px;
+}
+
+.header,
+.sub-header,
+.separator {
+  white-space: nowrap; 
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-text {
+  font-size: 17px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  font-weight: bold; 
+  white-space: nowrap; 
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.nav-icon {
+  width: 20px; 
+  height: auto;
+  margin-right: 20px;
+}
+
+.navigation a {
+  text-decoration: none; 
+}
+
+.navigation a:hover {
+  text-decoration: underline; 
+}
+.nav-text {
+  font-size: 17px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black; 
+  font-weight: bold;
+}
+
+.status {
+  display: flex;
+  align-items: center; 
+  flex-direction: column; 
+  margin-top: auto;
+}
+
+.status-icon {
+  width: 60px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.status-text {
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  font-weight: bold; 
+  text-align: center;
+}
+.upper-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+  }
+  
+  .bell-icon {
+    width: 30px; 
+    height: auto;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+
+  .upper-right {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center; 
+    margin-top: 40px;
+    font-weight: bold;
+  }
+  
+  .result-button {
+    flex: 1;
+    max-width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    font-size: 15px;
+    border: none;
+    background-color:#ffc0cb;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-top: 5px;
+    height: 70px;
+    margin-bottom: 15px;
+}
+  
+  .result-button .nav-icon {
+    width: 40px; 
+    height: 40px; 
+    margin-right: 15px;
+    margin-left: 10px;
+  }
+  
+  .button-info {
+    text-align: center;
+    padding-right: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  .button-number {
+    text-align: right;
+    font-weight: bold;
+    font-size: 30px;
+    color: red;
+  }
+  
+.information-client1 {
+  background-color: #ddd; 
+  padding: 10px; 
+  margin-top: 10px; 
+  display: flex;
+  align-items: center; 
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.information-client1 .client-image {
+  width: 30px; 
+  height: auto;
+  margin-right: 10px;
+}
+
+.information-client1 .client-details {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+
+.information-client1 .client-id {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+
+.information-client1 .client-buttons-container {
+  display: flex;
+  align-items: center;
+}
+
+.information-client1 .client-button {
+  background-color: #158F81; 
+  color: white; 
+  padding: 10px;
+  margin-right: 110px; 
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  text-align: center;
+  height: 50px;
+  width: 100px;
+}
+
+.information-client1 .suspend-button {
+  background-color: #158F81; 
+  display: flex;
+  align-items: center;
+  margin-right: 110px;
+  border-radius: 10px;
+  cursor: pointer; 
+  border-radius: 20px;
+  height: 50px;
+}
+
+.information-client1 .stop-icon {
+  width: 20px; 
+  height: 20px;
+  margin-bottom: 2px;
+  vertical-align: middle; 
+}
+
+.information-client1 .suspend-button .suspend-button-text {
+  margin-left: 10px; 
+}
+
+.clients-container {
+overflow-y: scroll;
+max-height: calc(100% - 200px); 
+margin-top: 20px;
+}
+
+.clients-container::-webkit-scrollbar {
+width: 10px; 
+}
+
+.clients-container::-webkit-scrollbar-track {
+background-color: #01D7C9; 
+}
+
+.clients-container::-webkit-scrollbar-thumb {
+background-color: #0FA958;
+border-radius: 5px; 
+}

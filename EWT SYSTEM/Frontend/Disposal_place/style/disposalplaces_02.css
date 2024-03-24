@@ -1,0 +1,316 @@
+/* Font Import - Add this to import Source Sans Pro font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #158F81 !important; 
+}
+
+.panel {
+  display: flex;
+  width: 1222px; 
+  height: 650px; 
+  background-color: #5EBBB3; 
+  border-radius: 20px; 
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7); 
+}
+
+.left-column {
+  flex: 1; 
+  background-color: #CDE5DF; 
+  border-top-left-radius: 20px; 
+  border-bottom-left-radius: 20px; 
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.right-column {
+  flex: 3; 
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex; 
+  flex-direction: column; 
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.header {
+  font-size: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.sub-header {
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-bottom: 20px;
+}
+
+.white-header {
+    color: white; 
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 20px; 
+  }
+
+.separator {
+  height: 2px;
+  width: 100%;
+  background-color: #565454; 
+  margin-bottom: 20px;
+}
+
+.header,
+.sub-header,
+.separator {
+  white-space: nowrap; 
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-text {
+  font-size: 17px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  font-weight: bold; 
+  white-space: nowrap; 
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.nav-icon {
+  width: 20px; 
+  height: auto;
+  margin-right: 20px;
+}
+
+.navigation a {
+  text-decoration: none; 
+}
+
+.navigation a:hover {
+  text-decoration: underline; 
+}
+.nav-text {
+  font-size: 17px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black; 
+  font-weight: bold;
+}
+
+.status {
+  display: flex;
+  align-items: center; 
+  flex-direction: column; 
+  margin-top: auto;
+}
+
+.status-icon {
+  width: 60px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.status-text {
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  font-weight: bold; 
+  text-align: center;
+}
+.upper-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+  }
+  
+  .bell-icon {
+    width: 30px; 
+    height: auto;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+
+  .upper-right {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+    /* Add the following styles to your existing CSS */
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    .result-button {
+      flex: 1;
+      max-width: 300px;
+      height: 70px;
+      display:flex;
+      align-items: center;
+      padding: 5px; /* Increase the padding to create more space */
+      font-size: 15px;
+      border: none;
+      background-color: #ddd;
+      cursor: pointer;
+      border-radius: 10px;
+      position: relative;
+      margin-top: 30px;
+      margin-left: 30%;
+      justify-content: center;
+    }
+
+    .result-button .nav-icon {
+      width: 40px; /* Adjust the width of the navigation icons as needed */
+      height: 40px; /* Adjust the height of the navigation icons as needed */
+      margin-right: 30px;
+    }
+
+    .button-info {
+      text-align: center;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .plus-image {
+      position: absolute;
+      top: 2px;
+      left: 80px;
+      width: 20px;
+      height: 20px;
+    }
+
+    .upper-right {
+      display: flex;
+      align-items: center;
+    }
+
+    .bell-icon {
+      height: auto;
+      width: 30%;
+      margin-right: 40px; /* Adjust the margin as needed */
+    }
+
+    .location-inputs {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px; /* Adjust margin-top as needed */
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .location-button {
+      margin-bottom: 30px; /* Adjust margin-bottom as needed */
+      padding: 30px;
+      border-radius: 8px;
+      outline: none; /* Remove default outline */
+      
+    }
+    
+
+   
+  
+    
+
+    /* CSS for the submit button */
+    .submit-button {
+      width: fit-content; /* Adjust width to fit content */
+      margin: auto; /* Center horizontally */
+    }
+
+    .submit-button button {
+      width: 200px; /* Set button width */
+      height: 50px; /* Set button height */
+      background-color: #158F81; /* Button background color */
+      color: white; /* Button text color */
+      font-size: 18px; /* Button font size */
+      font-weight: bold; /* Button font weight */
+      border: none; /* Remove button border */
+      border-radius: 8px; /* Button border radius */
+      cursor: pointer; /* Cursor style */
+      transition: background-color 0.3s; /* Smooth transition for background color */
+    }
+
+    .submit-button button:hover {
+      background-color: #11766D; /* Darken background color on hover */
+    }
+
+    .scrollable {
+      overflow-y: auto;
+      max-height: 400px; /* Adjust the max height as needed */
+    }
+
+   /* Add the CSS styles for the popup window */
+   /* Styles for the merged popup */
+/* Styles for the merged popup */
+/* Styles for the merged popup */
+/* Styles for the merged popup */
+/* Styles for the merged popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%; /* Center vertically */
+  left: 60%; /* Move more towards the right */
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 70%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+
+/* Styles for the popup content */
+.popup-content {
+  font-size: 20px; /* Adjust font size as needed */
+  line-height: 1.6; /* Adjust line height for readability */
+  letter-spacing: 0.5px; /* Adjust letter spacing for better appearance */
+  font-weight: bold; /* Make the font bold */
+  color: #333; /* Adjust font color */
+}
+
+/* Styles for the close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #333; /* Adjust color for close button */
+  font-size: 24px; /* Adjust font size for close button */
+}
+.selected-row {
+    background-color: lightblue;
+}

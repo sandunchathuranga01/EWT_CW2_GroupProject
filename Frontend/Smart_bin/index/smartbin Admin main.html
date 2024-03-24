@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow and Panel</title>
+    <link rel="stylesheet" href="../style/smartbin%20Admin%20main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="../script/jquery-3.7.1.min.js"></script>
+    <script src="../script/SmartBin.js"></script>
+    <script src="../script/smartBinMap.js"></script>
+</head>
+<body>
+<div class="panel">
+    <div class="left-column">
+        <img class="logo" src="pictures/EWT-removebg 1.png" alt="EWT System Logo">
+        <div class="header">EWT System</div>
+        <div class="sub-header">Eco Waste Tracking</div>
+        <div class="separator"></div>
+        <div class="navigation">
+            <div class="nav-item">
+                <a href="#waste-collector-panel" class="nav-text">ADMIN PANEL</a>
+            </div>
+        </div>
+
+        <div class="status"></div>
+    </div>
+    <div class="right-column">
+        <!-- Add a class to the header -->
+        <div class="header white-header">Smart Bin</div>
+      
+        <!-- Bell icon and email circle -->
+        <div class="upper-right">
+            <a href="#your-bell-link" class="bell-link">
+                <img class="bell-icon" src="pictures/bell-notification.png" alt="Bell Icon">
+            </a>
+        </div>
+      
+        <!-- Button Container below the header -->
+        <div class="button-container">
+          <!-- Button 1 - Schedule -->
+            <button class="result-button center-text">
+                <img class="nav-icon" src="pictures/mdi_bin2.png" alt="Schedule Icon">
+                <div class="button-info">
+                    <div class="button-number">01</div>
+                    <div class="button-description">Offline Smart Bins</div>
+                </div>
+            </button>
+      
+          <!-- Button 2 - Disposal Places -->
+            <button class="result-button">
+                <img class="nav-icon" src="pictures/mdi_bin.png" alt="Location Icon">
+                <div class="button-info">
+                    <div class="button-number">01</div>
+                    <div class="button-description">Online Smart Bins</div>
+                </div>
+            </button>
+      
+          <!-- Button 3 - Payment -->
+            <button class="result-button">
+                <img class="nav-icon" src="pictures/Vector.png" alt="Payment Icon">
+                <div class="button-info">
+                    <div class="button-description">Register New Bin</div>
+                </div>
+            <!-- Add the plus image here -->
+                <img class="plus-image" src="pictures/mingcute_plus-line.png" alt="Plus Icon">
+            </button>
+        </div>
+        <div>
+            <div class="navbar d-flex flex-row-reverse">
+                <form class="d-flex" role="search" onsubmit="event.preventDefault(); searchArea();">
+                    <input id="searchInput" class="form-control me-2" type="search" placeholder="Enter city name" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+
+            <div class="map_dis" id="map_div" style="width: 800px; height: 330px; border-radius: 10px; margin-left: 30px"></div>
+            <input type="text" id="startPoint" style="display:none;">
+            <input type="text" id="endPoint" style="display:none;">
+
+            <!-- Button for connecting to Google Maps -->
+            <button id="connectButton" class="btn btn-outline-success m-2 px-4 py-2" style="display: none;">Get Directions</button>
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

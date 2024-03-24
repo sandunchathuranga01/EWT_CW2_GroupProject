@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Main</title>
+    <link rel="stylesheet" href="Selection.css">
+    <script src="Selection.js"></script>
+</head>
+<body>
+    <div class="panel">
+        <div class="left-column">
+            <img src="Pictures/admin.png" alt="Image">
+        </div>
+        <div class="right-column">
+            <p class="main-text">Who are you?</p>
+            <div class="rectangle" onclick="redirectToLogin('client')">
+                <p class="inner-text">I am CLIENT</p>
+            </div>
+            <div class="rectangle" onclick="redirectToLogin('waste-collector')">
+                <p class="inner-text">I am WASTE COLLECTOR</p>
+            </div>
+            <div class="rectangle" onclick="redirectToLogin('administrator')">
+                <div class="inner-content">
+                    <img src="Pictures/admin1.png" alt="Image">
+                    <p class="inner-text">ADMINISTRATOR</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -16,26 +16,25 @@
         google.charts.setOnLoadCallback(getDisposalPlaces);
 
         function getDisposalPlaces() {
-            // Array to store disposal places
+           
             let mapData = [];
 
-            // Get disposal places
+            
             $.ajax({
                 method: "get",
                 url: "http://localhost:8080/api/v1/disposal_place/getAllDisposalPlaces",
                 async: true,
                 success: function (data) {
                     if (data.code === "00") {
-                        // Add disposal places to the mapData array
                         mapData = data.content.map(disposal => [disposal.lat, disposal.lng, disposal.address]);
 
-                        // Convert the data array to Google DataTable
+                       
                         var dataTable = google.visualization.arrayToDataTable([
                             ['Lat', 'Long', 'Address'],
                             ...mapData
                         ]);
 
-                        // Create map and draw it
+                        
                         var map = new google.visualization.Map(document.getElementById('map_div'));
                         map.draw(dataTable, {
                             showTooltip: true,
@@ -51,57 +50,57 @@
 <body>
   <div class="panel">
     <div class="left-column">
-      <img class="logo" src="pictures/EWT-removebg 1.png" alt="EWT System Logo">
+      <img class="logo" src="../pictures/EWT-removebg 1.png" alt="EWT System Logo">
       <div class="header">EWT System</div>
       <div class="sub-header">Eco Waste Tracking</div>
       <div class="separator"></div>
       
       <div class="navigation">
         <div class="nav-item">
-          <a href="adminpanel2.html" class="nav-text">
+          <a href="../Abmin Dashboard/adminpanel2.html" class="nav-text">
             ADMIN PANEL
           </a>
         </div>
         <div class="nav-item">
-          <a href="#settings" class="nav-text">
-            <img class="nav-icon" src="pictures/cog.svg" alt="Settings Icon">
+          <a href="../../Settings/index/adminpanel settings1.html" class="nav-text">
+            <img class="nav-icon" src="../pictures/cog.svg" alt="Settings Icon">
             Settings
           </a>
         </div>
         <div class="nav-item">
           <a href="../../Smart_bin/index/smartbin register.html" class="nav-text">
-            <img class="nav-icon" src="pictures/bin.png" alt="Smart Bin Icon">
+            <img class="nav-icon" src="../pictures/bin.png" alt="Smart Bin Icon">
             Register Smart Bin
           </a>
         </div>
           <div class="nav-item">
               <a href="../../Disposal%20place/index/Disposalplaces_01.html" class="nav-text">
-                  <img class="nav-icon" src="pictures/bin.png" alt="Smart Bin Icon">
+                  <img class="nav-icon" src="../pictures/bin.png" alt="Smart Bin Icon">
                   Register Disposal place
               </a>
           </div>
         <div class="nav-item">
           <a href="../../AdminUSER/collector/AllWasteCollector.html" class="nav-text">
-            <img class="nav-icon" src="pictures/Group5.png" alt="waste collector Icon">
+            <img class="nav-icon" src="../pictures/Group5.png" alt="waste collector Icon">
             Waste Collectors
           </a>
         </div>
         <div class="nav-item">
           <a href="../../AdminUSER/client/AllClient.html" class="nav-text">
-            <img class="nav-icon" src="pictures/Group (1).png" alt="client Icon">
+            <img class="nav-icon" src="../pictures/Group (1).png" alt="client Icon">
             Clients
           </a>
         </div>
         <div class="nav-item">
           <a href="#" class="nav-text">
-            <img class="nav-icon" src="pictures/financial.png" alt="financial Icon">
+            <img class="nav-icon" src="../pictures/financial.png" alt="financial Icon">
             Financial
           </a>
         </div>
       </div>
       
       <div class="status">
-        <img class="status-icon" src="pictures/clarity_power-solid.png" alt="Online/Offline Icon">
+        <img class="status-icon" src="../pictures/clarity_power-solid.png" alt="Online/Offline Icon">
       </div>
       <p>Online | Offline </p>
     </div>
@@ -115,7 +114,7 @@
         <div class="button-container">
           <!-- Button 1 Online Collectors--->
           <a href="#Online Collectors" class="result-button center-text">
-            <img class="nav-icon" src="pictures/Group2.png" alt="Schedule Icon">
+            <img class="nav-icon" src="../pictures/Group2.png" alt="Schedule Icon">
             <div class="button-info">
                 <div class="button-number">1</div>
               <div class="button-description">Online Collectors</div>
@@ -124,7 +123,7 @@
         
           <!-- Button 2 Online Smart Bins--->
           <a href="#Online Smart Bins" class="result-button center-text">
-            <img class="nav-icon" src="pictures/Vector.png" alt="Location Icon">
+            <img class="nav-icon" src="../pictures/Vector.png" alt="Location Icon">
             <div class="button-info">
                 <div class="button-number">01</div>
               <div class="button-description">Online Smart Bins</div>
@@ -133,7 +132,7 @@
       
           <!-- Button 3 Registration Request--->
           <a href="#Registration Request" class="result-button center-text">
-            <img class="nav-icon" src="pictures/file__1_-removebg-preview.png" alt="Payment Icon">
+            <img class="nav-icon" src="../pictures/file__1_-removebg-preview.png" alt="Payment Icon">
             <div class="button-info">
                 <div class="button-number">01</div>
               <div class="button-description">Registration Request</div>

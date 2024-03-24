@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Collector.css">
+    <script src="Collector.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="panel">
+        <div class="left-column">
+            <img src="Pictures/5.png" alt="Image">
+        </div>
+        <div class="right-column">
+            <p class="main-text1">Personal details</p>
+            <p class="main-text">Create your account</p>
+            <div class="row ">
+                <div class="rectangle short">
+                    <div class="inner-content">
+                        <input type="text" id="firstname" class="inner-text1" placeholder="First name" >
+                    </div>
+                </div>
+                <div class="rectangle short">
+                    <div class="inner-content">
+                        <input type="text" id="lastname" class="inner-text1" placeholder="Last name" >
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="rectangle short" >
+                    <div class="inner-content">
+                        <input type="text" id="drivingID" class="inner-text1" placeholder="Driving ID">
+                    </div>
+                </div>
+                <div class="rectangle short" >
+                    <div class="inner-content">
+                        <input type="text" id="nicPassport" class="inner-text1" placeholder="NIC / Passport ID">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="rectangle short">
+                    <div class="inner-content">
+                        <input type="text" id="modelOfVehicle" class="inner-text1" placeholder="Model of vehicle">
+                    </div>
+                </div>
+                <div class="rectangle short">
+                    <div class="inner-content">
+                        <input type="text" id="vehicleID" class="inner-text1" placeholder="Vehicle ID">
+                    </div>
+                </div>
+            </div>
+
+            <div class="rectangle">
+                <div class="inner-content">
+                    <input type="text" id="contact" class="inner-text1" placeholder="Contact number" >
+                </div>
+            </div>
+            <div class="rectangle">
+                <div class="inner-content">
+                    <input type="text" id="address" class="inner-text1" placeholder="Address">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="rectangle short">
+                    <div class="inner-content">
+                        <input type="text" id="email" class="inner-text1" placeholder="Email">
+                    </div>
+                </div>
+                <div class="rectangle short">
+                    <div class="inner-content">
+                        <input type="text" id="Password" class="inner-text1" placeholder="Password">
+                    </div>
+                </div>
+            </div>
+
+            <div class="next-button" id="nextButton">
+                <button class="next-text next-button" id="Next" type="button" onclick="saveCollector();">Request to register</button>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

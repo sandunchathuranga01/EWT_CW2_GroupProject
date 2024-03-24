@@ -1,0 +1,312 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #158F81; /* Shadow color */
+}
+
+.panel {
+    width: 1222px; 
+    height: 650px; 
+    background-color: #000; /* Panel color */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Shadow properties */
+    border-radius: 15px; /* Border radius for rounded corners */
+    display: flex; /* Display as a flex container */
+}
+
+.left-column {
+    flex: 1; /* Take up remaining space */
+    background-color: #fff; /* Left column color */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: left;
+    justify-content: flex-start; /* Move the image to the top */
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.left-column img {
+    max-width: 25%;
+    border-radius: 15px; /* Border radius for image */
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.line {
+    width: 80%; 
+    margin: 10px auto; 
+    border: 2px solid #000; /* Line color */
+}
+
+.right-column {
+    flex: 3;
+    background-color: #5EBBB3;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.text-container {
+    text-align: center;
+}
+
+.inner-text1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000;
+    line-height: 1;
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-right: 48px;
+    margin-top: -85px;
+}
+
+.inner-text2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000;
+    line-height: 1.5;
+    margin: 0;
+    font-size: 12px;
+    margin-right: 90px;
+}
+
+.inner-text3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000;
+    line-height: 1.5;
+    margin-top: 60px;
+    font-size: 14px;
+    margin-right: 100px;
+    cursor: pointer;
+}
+
+.main-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 4px;
+    margin-left: 50px; 
+    align-self: flex-start; 
+    margin-bottom: 4px;
+}
+
+.img-row {
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    max-width: 300px;
+    margin-top: 10px;
+}
+
+.img-row img {
+    max-width: 45px;
+    margin-left: 40px;
+}
+
+.right-column img {
+    max-width: 40px;
+    align-self: flex-end; /* Align to the right */
+    margin-right: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+}
+
+.rectangle {
+    flex: 1;
+    height: 70px; 
+    width: 250px;
+    background-color: #E8C1C1;
+    color: #000;
+    border-radius: 15px;
+    margin-top: -10px;
+    margin-left: 580px; 
+    margin-right: 10px;
+    display: flex;
+    cursor: pointer;
+}
+
+.inner-content {
+    display: flex;
+    align-items: center;
+}
+
+.inner-content img {
+    max-width: 50px;
+    margin-right: 10px; 
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 32px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align inner text to the right */
+}
+
+.inner-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: red;
+    line-height: 1;
+    margin: 0;
+    font-size: 35px; 
+    font-weight: bold;
+}
+
+.inner-text4 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000;
+    line-height: 1;
+    margin: 0;
+    font-size: 13px;
+}
+
+.rectangle1 {
+    display: flex;
+    height: 70px; 
+    width: 710px;
+    background-color: #CDE5DF;
+    color: #000;
+    border-radius: 10px;
+    margin-top: 16px;
+    margin-left: 40px; 
+    margin-right: 100px; 
+    align-items: center; /* Center the inner content vertically */
+}
+
+.inner-content1 {
+    flex: 1;
+    display: flex;
+    align-items: center; /* Center the text vertically */
+    margin-left: 10px; 
+}
+
+.inner-text5 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000;
+    line-height: 1;
+    margin: 0;
+    font-size: 20px;
+}
+
+.inner-content1 img {
+    max-width: 50px; 
+    margin-right: 10px; 
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 32px;
+}
+
+.short-rectangle {
+    width: 130px; 
+    height: 50px; 
+    background-color: #158F81; 
+    border-radius: 15px; 
+    margin-right: 10px; 
+    cursor: pointer;
+}
+
+.short-rectangle1 {
+    width: 50px; 
+    height: 50px; 
+    background-color: green; 
+    border-radius: 15px; 
+    margin-right: 30px; 
+}
+
+.inner-text6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    line-height: 1;
+    margin: 0;
+    font-size: 14px; 
+    margin-top: 10px;
+}
+
+.text-container7 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align inner text to the right */
+}
+
+.inner-content7 {
+    display: flex;
+    align-items: center;
+}
+
+.inner-text7 {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1;
+    color: #fff;
+    margin: 0;
+    font-size: 14px;
+    text-align: center; /* Center the text */
+    margin-bottom: 35px;
+    margin-right: 10px;
+    margin-left: -30px;
+    margin-top: 10px;
+}
+
+.inner-content7 img {
+    max-width: 55px; 
+    margin-top: -20px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    margin-right: 35px;
+}
+
+.inner-content8 {
+    position: relative;
+}
+
+.inner-content8 img {
+    max-width: 50px;
+    height: auto;
+    margin-top: -450px;
+    margin-bottom: 15px;
+    margin-left: 880px;
+}
+
+.image2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.scroll-container {
+    overflow-y: scroll;
+    height: 100%;
+    padding-top: 0px;
+    margin-right: 20px;
+    margin-bottom: 20PX;
+}
+    
+.scroll-container::-webkit-scrollbar {
+    width: 10px; /* Adjust the width of the scrollbar */
+}
+    
+.scroll-container::-webkit-scrollbar-track {
+    background-color: #01D7C9; /* Color of the scrollbar track */
+    border-radius: 5PX;
+}
+    
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #0FA958; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Adjust the border radius of the thumb */
+}
+
+
+

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shadow and Panel</title>
+  <link rel="stylesheet" href="../style/requesting service fill_part2.css">
+  <style>
+   
+  </style>
+</head>
+<body>
+  <div class="panel">
+    <div class="left-column">
+      <img class="logo" src="pictures/EWT-removebg 1.png" alt="EWT System Logo">
+      <div class="header">EWT System</div>
+      <div class="sub-header">Eco Waste Tracking</div>
+      <div class="separator"></div>
+      
+      <div class="navigation">
+        <div class="nav-item">
+          <a href="#waste-collector-panel" class="nav-text">
+            CLIENT PANEL
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#settings" class="nav-text">
+            <img class="nav-icon" src="pictures/cog.svg" alt="Settings Icon">
+            Settings
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="requesting service fill_part2.html" class="nav-text">
+            <img class="nav-icon" src="pictures/mingcute_service-fill.png" alt="Requesting service Icon">
+            Requesting Service
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#view-schedule" class="nav-text">
+            <img class="nav-icon" src="pictures/mingcute_schedule-fill.png" alt="View Schedule Icon">
+            View Schedule
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#view-disposal-place" class="nav-text">
+            <img class="nav-icon" src="pictures/location-pin.png" alt="View Disposal Place Icon">
+            View Disposal Place
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#payment" class="nav-text">
+            <img class="nav-icon" src="pictures/fluent_payment-17-filled.png" alt="Payment Icon">
+            Payment
+          </a>
+        </div>
+      </div>
+      
+      <div class="status">
+        <img class="status-icon" src="pictures/clarity_power-solid.png" alt="Online/Offline Icon">
+      </div>
+      <p>Online | Offline </p>
+    </div>
+    <!-- Add the following code inside the right-column div -->
+    <div class="right-column">
+      <!-- Always visible Requesting Service header -->
+      <div class="header white-header"> My Requests</div>
+      <div class="schedule-container">
+        <!-- Add the following code for each rectangle -->
+        <div class="schedule-rectangle">
+          <!-- Your content for the first rectangle -->
+        </div>
+        <div class="schedule-rectangle">
+          <!-- Your content for the second rectangle -->
+        </div><div class="schedule-rectangle">
+          <!-- Your content for the second rectangle -->
+        </div>
+
+        <div class="schedule-rectangle">
+          <!-- Your content for the third rectangle -->
+        </div>
+      <!-- Request Form -->
+      <form action="#" id="request-form">
+        <div class="prediction-section"></div>
+        
+        <!-- Submit button -->
+        <div class="submit-button">
+          <button type="submit" id="submit-btn">Create New Request</button>
+        </div>
+      </form>
+      <!-- Hidden rectangle -->
+      <div class="hidden-rectangle" id="hidden-rectangle"></div>
+      <!-- Bell icon and email circle -->
+      <div class="upper-right">
+          <a href="#your-bell-link" class="bell-link">
+              <img class="bell-icon" src="pictures/bell-notification.png" alt="Bell Icon">
+          </a>
+      </div>
+      
+  </div>
+</div>
+<!-- Add the following script -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const requestForm = document.getElementById('request-form');
+    const hiddenRectangle = document.getElementById('hidden-rectangle');
+
+    requestForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      // Show hidden rectangle
+      hiddenRectangle.style.display = 'block';
+
+      // Redirect to the appropriate page based on the form's action attribute
+      if (requestForm.getAttribute('action') === 'requesting service 1.html') {
+        window.location.href = 'requesting service 1.html';
+      } else if (requestForm.getAttribute('action') === 'requesting_service_fill_part2.html') {
+        // Redirect to the next page
+        window.location.href = 'requesting_service_fill_part2.html';
+      }
+    });
+
+    // If the "Create New Request" button is clicked, redirect to requesting service 1.html
+    const createRequestBtn = document.getElementById('submit-btn');
+    createRequestBtn.addEventListener('click', function() {
+      // Set the form's action attribute to requesting service 1.html
+      requestForm.setAttribute('action', 'requesting service 1.html');
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -47,12 +47,6 @@
           </a>
         </div>
         <div class="nav-item">
-          <a href="#requests" class="nav-text">
-            <img class="nav-icon" src="pictures/Group (2).png" alt="report icon">
-            Report
-          </a>
-        </div>
-        <div class="nav-item">
           <a href="#income" class="nav-text">
             <img class="nav-icon" src="pictures/financial.png" alt="financial Icon">
             Financial
@@ -63,44 +57,47 @@
       </div>
     </div>
     <div class="right-column">
-        <!-- Add a class to the header -->
       <div class="header white-header">Disposal Places</div>
       <div class="upper-right">
         <a href="#your-bell-link" class="bell-link">
           <img class="bell-icon" src="pictures/bell-notification.png" alt="Bell Icon">
         </a>
       </div>
-      <!-- Button Container below the header -->
       <div class="button-container">
-   <button class="result-button">
-    <img class="nav-icon" src="pictures/Vector.png" alt="Payment Icon">
-    <div class="button-info">
-      <div class="button-description">Register New Place</div>
-    </div>
-        <!-- Add the plus image here -->
-    <img class="plus-image" src="pictures/mingcute_plus-line.png" alt="Plus Icon">
-    </button>
-  </div>
-
-
+        <div class="result-button">
+          <img class="nav-icon" src="pictures/Vector.png" alt="Payment Icon">
+          <div class="button-info">
+            <div class="button-description">Register New Place</div>
+          </div>
+          <img class="plus-image" src="pictures/mingcute_plus-line.png" alt="Plus Icon">
+        </div>
+      </div>
       <form id="disposal-form" action="disposalplaces1.html" method="get">
         <div class="location-inputs">
-          <input type="text" class="location-input" disabled id="Location_ID" placeholder="Location ID" name="Location_ID" required>
-          <input type="text" class="location-input" id="Address" placeholder="Address" name="Address" required>
-          <input type="text" class="location-input" id="Name" placeholder="Name" name="Name" required>
-        </div>
-        <div class="additional-inputs">
-          <input type="text" class="location-input half-width" id="DLatitude" placeholder="Latitude (lat)" name="Latitude" required>
-          <input type="text" class="location-input half-width" id="DLongitude" placeholder="Longitude (lng)" name="Longitude" required>
+          <div class="location-input-group">
+            <input type="text" class="location-input" disabled id="Location_ID" placeholder="Location ID" name="Location_ID" required>
+            <input type="text" class="location-input" id="Address" placeholder="Address" name="Address" required onkeypress="handleKeyPress(event, document.getElementById('Name'))">
+          </div>
+          <input type="text" class="location-input" id="Name" placeholder="Name" name="Name" required onkeypress="handleKeyPress(event, document.getElementById('DLatitude'))">
+          <div class="location-input-group">
+            <input type="text" id="DLatitude" class="location-input" placeholder="Latitude(lat)" name="Latitude(lan)" required onkeypress="handleKeyPress(event, document.getElementById('DLongitude'))">
+            <input type="text" id="DLongitude" class="location-input" placeholder="Longitude(lan)" name="Longitude (lat)" required onkeypress="handleKeyPress(event, document.getElementById('submitButton'))">
+          </div>
         </div>
         <div class="submit-button">
-          <button type="button" class="btn btn-primary" onclick="saveDisposalPlace()">Save</button>
+          <button type="button" id="submitButton" class="btn btn-primary" onclick="saveDisposalPlace()">Save</button>
           <a href="../index/disposalplaces_02.html"><button type="button" class="btn btn-primary" >View Disposal Places</button></a>
         </div>
       </form>
-
-
     </div>
   </div>
+  <script>
+   function handleKeyPress(event, nextElement) {
+    if (event.keyCode === 13) { 
+      event.preventDefault(); 
+      nextElement.focus(); 
+    }
+  }
+  </script>
 </body>
 </html>

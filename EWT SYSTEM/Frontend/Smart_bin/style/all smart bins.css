@@ -10,6 +10,9 @@
       height: 100vh;
       background-color: #158F81 !important; /* Shadow color */
     }
+.selected-row {
+    background-color: lightblue;
+}
 
     .panel {
       display: flex;

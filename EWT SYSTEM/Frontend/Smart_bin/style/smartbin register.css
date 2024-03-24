@@ -9,42 +9,42 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #158F81; /* Shadow color */
+  background-color: #158F81 !important; 
 }
 
 .panel {
   display: flex;
-  width: 1222px; /* Adjust the width of the panel as needed */
-  height: 650px; /* Adjust the height of the panel as needed */
-  background-color: #5EBBB3; /* Panel color */
-  border-radius: 20px; /* Border radius for rounded corners */
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7); /* Shadow properties */
+  width: 1222px; 
+  height: 650px; 
+  background-color: #5EBBB3; 
+  border-radius: 20px; 
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7); 
 }
 
 .left-column {
-  flex: 1; /* Occupy 1/4 of the panel width */
-  background-color: #CDE5DF; /* Left column color */
-  border-top-left-radius: 20px; /* Adjust the border radius for top left corner */
-  border-bottom-left-radius: 20px; /* Adjust the border radius for bottom left corner */
+  flex: 1; 
+  background-color: #CDE5DF; 
+  border-top-left-radius: 20px; 
+  border-bottom-left-radius: 20px; 
   padding: 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Adjust alignment */
-  align-items: center; /* Center content horizontally */
+  justify-content: space-between; 
+  align-items: center; 
 }
 
 .right-column {
-  flex: 3; /* Occupy 3/4 of the panel width */
+  flex: 3; 
   padding: 20px;
   box-sizing: border-box;
   position: relative;
-  display: flex; /* Add display flex to align items in a row */
-  flex-direction: column; /* Maintain column direction for other content */
+  display: flex; 
+  flex-direction: column; 
 }
 
 .logo {
-  width: 60px; /* Adjust the width of the logo as needed */
+  width: 60px;
   height: auto;
   margin-bottom: 10px;
 }
@@ -56,30 +56,29 @@ body {
   margin-bottom: 5px;
 }
 
-.sub-header-small {
-  color: white;
-  font-size: 14px; /* Adjust the font size as needed */
-  font-family: 'Source Sans Pro', sans-serif;
-  margin-bottom: 10px; /* Adjust the margin as needed */
-}
-
-.white-header {
-  color: white; /* Set the text color to white */
-  font-family: 'Source Sans Pro', sans-serif;
-  margin-top: 20px; /* Adjust the margin to move the header up */
-}
-
 .sub-header {
   font-size: 14px;
   font-family: 'Source Sans Pro', sans-serif;
   margin-bottom: 20px;
 }
 
+.white-header {
+    color: white; 
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 20px; 
+  }
+
 .separator {
-  height: 4px;
+  height: 2px;
   width: 100%;
-  background-color: #565454; /* Thick line color */
+  background-color: #565454; 
   margin-bottom: 20px;
+}
+
+.header,
+.sub-header,
+.separator {
+  white-space: nowrap; 
 }
 
 .navigation {
@@ -91,7 +90,8 @@ body {
   font-size: 17px;
   font-family: 'Source Sans Pro', sans-serif;
   color: black;
-  font-weight: bold; /* Make the navigation panel text bold */
+  font-weight: bold; 
+  white-space: nowrap; 
 }
 
 .nav-item {
@@ -100,60 +100,74 @@ body {
   margin-bottom: 20px;
 }
 
-/* Add the following CSS to your existing styles */
-.navigation a {
-  text-decoration: none; /* Remove underline from links */
-}
-
 .nav-icon {
-  width: 20px; /* Adjust the width of the navigation icons as needed */
+  width: 20px; 
   height: auto;
   margin-right: 20px;
 }
 
+.navigation a {
+  text-decoration: none; 
+}
+
+.navigation a:hover {
+  text-decoration: underline; 
+}
 .nav-text {
   font-size: 17px;
   font-family: 'Source Sans Pro', sans-serif;
-  color: black; /* Text color */
+  color: black; 
   font-weight: bold;
-}
-
-/* Add the following CSS to your existing styles */
-.navigation a {
-  text-decoration: none; /* Remove underline from links */
 }
 
 .status {
   display: flex;
-  align-items: center; /* Center content horizontally */
-  flex-direction: column; /* Adjust alignment */
+  align-items: center; 
+  flex-direction: column; 
   margin-top: auto;
 }
 
 .status-icon {
-  width: 60px; /* Adjust the width of the status icon as needed */
+  width: 60px;
   height: auto;
-  margin-bottom: 5px; /* Add margin for spacing between logo and text */
+  margin-bottom: 5px;
 }
 
 .status-text {
   font-size: 14px;
   font-family: 'Source Sans Pro', sans-serif;
   color: black;
-  font-weight: bold; /* Make the "Online | Offline" text bold */
+  font-weight: bold; 
   text-align: center;
 }
 
-.upper-right {
-  position: absolute;
-  top: 0;
-  right: 10px;
-  margin: 30px;
-  display: flex;
-  align-items: center;
-}
+  
+  .bell-icon {
+    width: 30px; 
+    height: auto;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
 
-/* Add the following styles to your existing CSS */
+  .upper-right {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  .upper-right {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  * Add the following styles to your existing CSS */
 .button-container {
   display: flex;
   justify-content: space-between;
@@ -251,20 +265,7 @@ body {
   margin-right: 10px;
   
 }
-    /* Add the following styles to your existing CSS */
-.page-down-button {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    z-index: 999;
-    cursor: pointer;
-    margin: right 60px; ;
-  }
   
-  .page-down-button img {
-    width: 40px; /* Adjust the size as needed */
-    height: 40px;
-  }
   .button-container {
     display: flex;
     justify-content: space-between;
@@ -274,7 +275,7 @@ body {
   .view-button {
   display: flex;
   align-items: center;
-  margin-left: 40px;
+  margin-left: 220px;
 }
 
 .submit-button button,

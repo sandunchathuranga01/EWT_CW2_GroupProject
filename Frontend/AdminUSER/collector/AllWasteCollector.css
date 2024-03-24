@@ -1,57 +1,165 @@
+/* Font Import - Add this to import Source Sans Pro font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #158F81; /* Shadow color */
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #158F81; 
 }
 
 .panel {
-    width: 1222px; 
-    height: 650px; 
-    background-color: #000; /* Panel color */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Shadow properties */
-    border-radius: 15px; /* Border radius for rounded corners */
-    display: flex; /* Display as a flex container */
+  display: flex;
+  width: 1222px; 
+  height: 650px;
+  background-color: #5EBBB3; 
+  border-radius: 20px; 
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7); 
 }
 
 .left-column {
-    flex: 1; /* Take up remaining space */
-    background-color: #fff; /* Left column color */
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: left;
-    justify-content: flex-start; /* Move the image to the top */
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
-
-.left-column img {
-    max-width: 25%;
-    border-radius: 15px; /* Border radius for image */
-    margin-left: 20px;
-    margin-top: 30px;
-}
-
-.line {
-    width: 80%; 
-    margin: 10px auto; 
-    border: 2px solid #000; /* Line color */
+  flex: 1; 
+  background-color: #CDE5DF; 
+  border-top-left-radius: 20px; 
+  border-bottom-left-radius: 20px; 
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  align-items: center; 
 }
 
 .right-column {
-    flex: 3;
-    background-color: #5EBBB3;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+  flex: 3; 
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex; 
+  flex-direction: column; 
 }
 
+.logo {
+  width: 60px; 
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.header {
+  font-size: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+
+.sub-header-small {
+    color: white;
+    font-size: 14px; 
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 10px; 
+  }
+
+.white-header {
+  color: white; 
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 20px; 
+}
+
+.sub-header {
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-bottom: 20px;
+}
+
+.separator {
+  height: 4px;
+  width: 100%;
+  background-color: #565454; 
+  margin-bottom: 20px;
+}
+
+.header,
+.sub-header,
+.separator {
+  white-space: nowrap; 
+  
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-text {
+  font-size: 17px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  font-weight: bold; 
+  white-space: nowrap; 
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.navigation a {
+  text-decoration: none; 
+}
+
+.navigation a:hover {
+  text-decoration: underline; 
+}
+
+.nav-icon {
+  width: 20px; 
+  height: auto;
+  margin-right: 20px;
+}
+
+.nav-text {
+  font-size: 17px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black; 
+  font-weight: bold;
+}
+
+.status {
+  display: flex;
+  align-items: center; 
+  flex-direction: column; 
+  margin-top: auto;
+}
+
+.status-icon {
+  width: 60px; 
+  height: auto;
+  margin-bottom: 5px; 
+}
+
+.status-text {
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  font-weight: bold; 
+  text-align: center;
+}
+
+.upper-right {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+  }
 .text-container {
     text-align: center;
 }

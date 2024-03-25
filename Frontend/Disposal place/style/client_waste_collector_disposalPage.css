@@ -151,6 +151,7 @@ body {
 .button-container {
   display: flex;
   justify-content: center;
+  height: 80px;
 }
 
 .result-button {

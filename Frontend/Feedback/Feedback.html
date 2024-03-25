@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="Feedback.css">
+    <script src="Feedback.js"></script>
+</head>
+
+<body>
+    <div class="panel">
+      <div class="left-column">
+        <img class="logo" src="pictures/EWT-removebg 1.png" alt="EWT System Logo">
+        <div class="header">EWT System</div>
+        <div class="sub-header">Eco Waste Tracking</div>
+        <div class="separator"></div>
+        
+        <div class="navigation">
+          <div class="nav-item">
+            <a href="#waste-collector-panel" class="nav-text">
+              ADMIN PANEL
+            </a>
+          </div>
+          <div class="nav-item">
+            <a href="#settings" class="nav-text">
+              <img class="nav-icon" src="pictures/cog.svg" alt="Settings Icon">
+              Settings
+            </a>
+          </div>
+          <div class="nav-item">
+            <a href="#smart-bin" class="nav-text">
+              <img class="nav-icon" src="pictures/bin.png" alt="Smart Bin Icon">
+              Smart Bin
+            </a>
+          </div>
+          <div class="nav-item">
+            <a href="#view-schedule" class="nav-text">
+              <img class="nav-icon" src="pictures/waste.png" alt="waste collector icon">
+              Waste Collector
+            </a>
+          </div>
+          <div class="nav-item">
+            <a href="#view-disposal-place" class="nav-text">
+              <img class="nav-icon" src="pictures/Group (1).png" alt="client icon">
+              Client
+            </a>
+          </div>
+          <div class="nav-item">
+            <a href="#income" class="nav-text">
+              <img class="nav-icon" src="pictures/financial.png" alt="financial Icon">
+              Financial
+            </a>
+          </div>
+        </div>
+        <div class="status">
+        </div>
+      </div>
+        <div class="right-column">
+            <img src="Pictures/10.png" alt="Image">
+            <p class="main-text">Give Feedback</p>
+            <p class="main-text1">What do you think about our service?</p>
+            <div class="scroll-container">
+            <div class="rectangle">
+                <form>
+                    <textarea class="feedback-input" placeholder="Enter your feedback here..."></textarea>
+                </form>
+            </div>
+            <div class="img-row">
+                <img id="img1" src="Pictures/16.png" alt="Image" onclick="changeImageBackground('img1')">
+                <img id="img2" src="Pictures/16.png" alt="Image" onclick="changeImageBackground('img2')">
+                <img id="img3" src="Pictures/16.png" alt="Image" onclick="changeImageBackground('img3')">
+                <img id="img4" src="Pictures/16.png" alt="Image" onclick="changeImageBackground('img4')">
+                <img id="img5" src="Pictures/16.png" alt="Image" onclick="changeImageBackground('img5')">
+            </div>
+            <button class="submit-button">
+                <p class="submit-text">Submit Feedback</p>
+            </button>
+            <script>
+                function changeImageBackground(id) {
+                    var clickedImage = document.getElementById(id);
+                    if (clickedImage.style.backgroundColor === 'Yellow') {
+                        clickedImage.style.backgroundColor = '';
+                    } else {
+                        clickedImage.style.backgroundColor = 'Yellow';
+                    }
+                }
+            </script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

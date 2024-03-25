@@ -1,17 +1,12 @@
 function rowClicked(event) {
     // Remove the 'selected-row' class from all rows
     $('#AllClient tr').removeClass('selected-row');
-
-    // Add the 'selected-row' class to the clicked row
     $(event.target).closest('tr').addClass('selected-row');
-
-    // Update the delete button to get the location ID from the selected row
     let id = $(event.target).closest('tr').find('td:first').text();
     $('#id').val(id);
 }
 
 function deleteClient() {
-    // Get the locationID directly from the selected row
     let id = $('#AllClient tr.selected-row').find('td:first').text();
 
     $.ajax({

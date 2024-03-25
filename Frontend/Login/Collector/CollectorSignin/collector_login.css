@@ -5,21 +5,21 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #158F81; /* Shadow color */
+    background-color: #158F81;
 }
 
 .panel {
     width: 1222px; 
     height: 650px; 
-    background-color: #5EBBB3; /* Panel color */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Shadow properties */
-    border-radius: 15px; /* Border radius for rounded corners */
-    display: flex; /* Display as flex container */
+    background-color: #5EBBB3;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    display: flex;
 }
 
 .left-column {
-    flex: 1; /* Take up remaining space */
-    background-color: #5EBBB3; /* Left column color */
+    flex: 1;
+    background-color: #5EBBB3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +28,7 @@ body {
 
 .left-column img {
     max-width: 80%;
-    border-radius: 15px; /* Border radius for image */
+    border-radius: 15px;
 }
 
 .right-column {

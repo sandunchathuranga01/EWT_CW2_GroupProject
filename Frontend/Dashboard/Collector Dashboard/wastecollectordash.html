@@ -16,9 +16,8 @@
     google.charts.setOnLoadCallback(getDisposalPlaces);
 
     function getDisposalPlaces() {
-      // Array to store disposal places
-      let mapData = [];
 
+      let mapData = [];
       // Get disposal places
       $.ajax({
         method: "get",
@@ -26,10 +25,9 @@
         async: true,
         success: function (data) {
           if (data.code === "00") {
-            // Add disposal places to the mapData array
+
             mapData = data.content.map(disposal => [disposal.lat, disposal.lng, disposal.address]);
 
-            // Convert the data array to Google DataTable
             var dataTable = google.visualization.arrayToDataTable([
               ['Lat', 'Long', 'Address'],
               ...mapData

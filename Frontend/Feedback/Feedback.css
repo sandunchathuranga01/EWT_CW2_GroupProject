@@ -1,0 +1,276 @@
+/* Font Import - Add this to import Source Sans Pro font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #158F81 !important; 
+}
+
+.panel {
+  display: flex;
+  width: 1222px; 
+  height: 650px; 
+  background-color: #5EBBB3; 
+  border-radius: 20px; 
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7); 
+}
+
+.left-column {
+  flex: 1; 
+  background-color: #CDE5DF; 
+  border-top-left-radius: 20px; 
+  border-bottom-left-radius: 20px; 
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.right-column {
+  flex: 3; 
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex; 
+  flex-direction: column; 
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.header {
+  font-size: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.sub-header {
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-bottom: 20px;
+}
+
+.white-header {
+    color: white; 
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 20px; 
+  }
+
+.separator {
+  height: 2px;
+  width: 100%;
+  background-color: #565454; 
+  margin-bottom: 20px;
+}
+
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-text {
+  font-size: 17px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  font-weight: bold; 
+  white-space: nowrap; 
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.nav-icon {
+  width: 20px; 
+  height: auto;
+  margin-right: 20px;
+}
+
+.navigation a {
+  text-decoration: none; 
+}
+
+.navigation a:hover {
+  text-decoration: underline; 
+}
+
+
+.status {
+  display: flex;
+  align-items: center; 
+  flex-direction: column; 
+  margin-top: auto;
+}
+
+.status-icon {
+  width: 60px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.status-text {
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  font-weight: bold; 
+  text-align: center;
+}
+
+  
+  .bell-icon {
+    width: 30px; 
+    height: auto;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+
+  .upper-right {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+
+.main-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 50px;
+    align-self: flex-start;
+}
+
+.main-text1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 50px;
+    align-self: flex-start;
+}
+
+.right-column img {
+    max-width: 40px;
+    align-self: flex-end; /* Align to the right */
+    margin-right: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.feedback-input {
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 630px; 
+    height: 240px; 
+    margin: 20px; 
+    padding: 10px; 
+    border: 1px solid transparent; 
+    resize: none; 
+    font-size: 20px; 
+    color: #000; /* Text color */
+    background-color: #fff; /* Background color */
+    border-radius: 10px;
+    outline:none;
+}
+
+.rectangle {
+    width: 650px;
+    height: 250px;
+    background-color: #CDE5DF;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Add relative positioning */
+    margin-right: 100px;
+    margin-bottom: 30px;
+}
+
+.img-row {
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    max-width: 500px; /* Increase the maximum width */
+    margin-top: 10px;
+    padding-left: 80px;
+    cursor: pointer;
+}
+
+.img-row img {
+    max-width: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+.img-row img {
+    max-width: 50px;
+    margin: 0 40px;
+}
+
+.submit-button {
+    width: 300px;
+    height: 55px;
+    background-color: #158F81;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    margin-left: 150px;
+}
+
+.submit-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1;
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center; /* Center the text */
+}
+
+.scroll-container {
+    height: 400px;
+    overflow-y: auto;
+    overflow-x: auto;
+    padding-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.scroll-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background-color: #01D7C9; /* Color of the scrollbar track */
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #0FA958; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Adjust the border radius of the thumb */
+}
+

@@ -3,15 +3,18 @@ package com.EWTsystem.EWT.system.UserLogingSystem.Client;
 import com.EWTsystem.EWT.system.Other.ResDTO;
 import com.EWTsystem.EWT.system.Other.StandardResponse;
 import com.EWTsystem.EWT.system.Other.VarList;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+
 import java.util.List;
 @CrossOrigin
 @RestController
-@RequestMapping("api/v1/user")
+@RequestMapping("api/v1/Client")
 public class UserController {
 
     @Autowired
@@ -71,11 +74,6 @@ public class UserController {
         }
     }
 
-
-
-
-
-
     @PostMapping("/saveUser")
     public ResponseEntity saveUser(@RequestBody AuthUserDTO authUserDTO) {
         try {
@@ -109,37 +107,35 @@ public class UserController {
     }
 
 
-    @PutMapping(value = "/updateUser")
-    public ResponseEntity updateUser(@RequestBody AuthUserDTO authUserDTO){
+    @PutMapping("/updatePassword")
+    public ResponseEntity updatePassword(@RequestParam(value = "email") String email,
+                                         @RequestParam(value = "newPassword") String newPassword) {
         try {
-            String res=userService.updateUser(authUserDTO);
-            if (res.equals("00")){
+            String res = userService.updatePassword(email, newPassword);
+            if (res.equals(VarList.RSP_SUCCESS)) {
                 resDTO.setCode(VarList.RSP_SUCCESS);
-                resDTO.setMessage("Success");
-                resDTO.setContent(authUserDTO);
+                resDTO.setMessage("Password updated successfully");
+                resDTO.setContent(null);
                 return new ResponseEntity(resDTO, HttpStatus.ACCEPTED);
-
-            }else if(res.equals("01")) {
-                resDTO.setCode(VarList.RSP_DUPLICATED);
-                resDTO.setMessage("Not A Registered Employee");
-                resDTO.setContent(authUserDTO);
-                return new ResponseEntity(resDTO, HttpStatus.BAD_REQUEST);
-            }else {
+            } else if (res.equals(VarList.RSP_NO_DATA_FOUND)) {
+                resDTO.setCode(VarList.RSP_NO_DATA_FOUND);
+                resDTO.setMessage("User not found with the provided email");
+                resDTO.setContent(null);
+                return new ResponseEntity(resDTO, HttpStatus.NOT_FOUND);
+            } else {
                 resDTO.setCode(VarList.RSP_FAIL);
-                resDTO.setMessage("Error");
+                resDTO.setMessage("Failed to update password");
                 resDTO.setContent(null);
                 return new ResponseEntity(resDTO, HttpStatus.BAD_REQUEST);
             }
-
-        }catch (Exception ex){
+        } catch (Exception ex) {
             resDTO.setCode(VarList.RSP_ERROR);
             resDTO.setMessage(ex.getMessage());
             resDTO.setContent(null);
             return new ResponseEntity(resDTO, HttpStatus.INTERNAL_SERVER_ERROR);
-
         }
-
     }
+
 
     @GetMapping("/getAllUser")
     public ResponseEntity getAllUser(){

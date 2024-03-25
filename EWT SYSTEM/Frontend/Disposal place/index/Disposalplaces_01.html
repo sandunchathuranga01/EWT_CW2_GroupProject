@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disposal places</title>
+  <link rel="stylesheet" type="text/css" href="../style/Disposalplaces_01.css" />
+  <script src="../script/DisposalPlace.js"></script>
+  <script src="../script/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <div class="panel">
+    <div class="left-column">
+      <img class="logo" src="pictures/EWT-removebg 1.png" alt="EWT System Logo">
+      <div class="header">EWT System</div>
+      <div class="sub-header">Eco Waste Tracking</div>
+      <div class="separator"></div>
+      
+      <div class="navigation">
+        <div class="nav-item">
+          <a href="../../Dashboard/Abmin Dashboard/adminpanel2.html" class="nav-text">
+            ADMIN PANEL
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="../../Settings/index/adminpanel settings1.html" class="nav-text">
+            <img class="nav-icon" src="pictures/cog.svg" alt="Settings Icon">
+            Settings
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="../../Smart_bin/index/smartbin Admin main.html" class="nav-text">
+            <img class="nav-icon" src="pictures/bin.png" alt="Smart Bin Icon">
+            Smart Bin
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="../../AdminUSER/collector/AllWasteCollector.html" class="nav-text">
+            <img class="nav-icon" src="pictures/waste.png" alt="waste collector icon">
+            Waste Collector
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="../../AdminUSER/client/AllClient.html" class="nav-text">
+            <img class="nav-icon" src="pictures/Group (1).png" alt="client icon">
+            Client
+          </a>
+        </div>
+       
+      </div>
+      <div class="status">
+      </div>
+    </div>
+    <div class="right-column">
+      <div class="header white-header">Disposal Places</div>
+      
+      <div class="button-container">
+        <div class="result-button">
+          <img class="nav-icon" src="pictures/Vector.png" alt="Payment Icon">
+          <div class="button-info">
+            <div class="button-description">Register New Place</div>
+          </div>
+          <img class="plus-image" src="pictures/mingcute_plus-line.png" alt="Plus Icon">
+        </div>
+      </div>
+      <form id="disposal-form" action="disposalplaces1.html" method="get">
+        <div class="location-inputs">
+          <div class="location-input-group">
+            <input type="text" class="location-input" disabled id="Location_ID" placeholder="Location ID" name="Location_ID" required>
+            <input type="text" class="location-input" id="Address" placeholder="Address" name="Address" required onkeypress="handleKeyPress(event, document.getElementById('Name'))">
+          </div>
+          <input type="text" class="location-input" id="Name" placeholder="Name" name="Name" required onkeypress="handleKeyPress(event, document.getElementById('DLatitude'))">
+          <div class="location-input-group">
+            <input type="text" id="DLatitude" class="location-input" placeholder="Latitude(lat)" name="Latitude(lan)" required onkeypress="handleKeyPress(event, document.getElementById('DLongitude'))">
+            <input type="text" id="DLongitude" class="location-input" placeholder="Longitude(lan)" name="Longitude (lat)" required onkeypress="handleKeyPress(event, document.getElementById('submitButton'))">
+          </div>
+        </div>
+        <div class="submit-button">
+          <button type="button" id="submitButton" class="btn btn-primary" onclick="saveDisposalPlace()">Save</button>
+          <a href="../index/disposalplaces_02.html"><button type="button" class="btn btn-primary" >View Disposal Places</button></a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script>
+   function handleKeyPress(event, nextElement) {
+    if (event.keyCode === 13) { 
+      event.preventDefault(); 
+      nextElement.focus(); 
+    }
+  }
+  </script>
+</body>
+</html>

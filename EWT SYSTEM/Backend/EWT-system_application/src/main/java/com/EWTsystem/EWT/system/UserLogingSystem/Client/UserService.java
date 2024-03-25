@@ -47,6 +47,19 @@ public class UserService {
             return VarList.RSP_NO_DATA_FOUND;
         }
     }
+    public String updatePassword(String email, String newPassword) {
+        List<Users> users = userRpo.findAllByEmail(email);
+
+        if (users.isEmpty()) {
+            return VarList.RSP_NO_DATA_FOUND;
+        }
+
+        Users user = users.get(0);
+        user.setPassword(newPassword);
+        userRpo.save(user);
+
+        return VarList.RSP_SUCCESS;
+    }
 
 
 }

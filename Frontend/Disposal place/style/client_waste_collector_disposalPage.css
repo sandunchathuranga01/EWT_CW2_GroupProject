@@ -155,7 +155,8 @@ body {
 
 .result-button {
   flex: 1;
-  max-height: 100px;
+  max-height: 80px;
+  padding: 20px;
   max-width: 250px;
   display: flex;
   align-items: center;
@@ -171,7 +172,7 @@ body {
 
 .button-number {
   font-weight: bold;
-  font-size: 30px;
+  font-size: px;
 }
 
 .button-info {

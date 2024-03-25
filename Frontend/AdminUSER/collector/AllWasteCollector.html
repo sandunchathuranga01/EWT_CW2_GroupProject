@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../Disposal%20place/script/jquery-3.7.1.min.js"></script>
+    <SCRIPT src="wastecollector.js"></SCRIPT>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="AllWasteCollector.css">
 </head>
@@ -67,7 +70,7 @@
                     <div class="inner-content">
                         <img src="pictures/27.png" alt="Image">
                         <div class="text-container">
-                            <p class="inner-text">01</p>
+
                             <p class="inner-text4">Registration Request</p>
                         </div>
                     </div>
@@ -75,27 +78,27 @@
             </div>
 
             <div class="scroll-container">
-            <div class="rectangle1">
-                <div class="inner-content1">
-                    <img src="pictures/5.png" alt="Image">
-                    <div class="text-container">
-                        <p class="inner-text5">123####</p>
-                    </div>
-                </div>
-                <button class="short-rectangle">
-                    <div class="text-container">
-                        <p class="inner-text6">View Collector Details</p>
-                    </div>
-                </button>
-                <button class="short-rectangle">
-                    <div class="inner-content7">
-                        <img src="pictures/31.png" alt="Image">
-                        <div class="text-container7">
-                            <p class="inner-text7">Suspend Collector</p>
+                <div class="mt-3">
+                    <div class="table-section" >
+                        <table class="table table-bordered border-primary table-hover" >
+                            <thead class="table-dark">
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Contact number</th>
+                                <th scope="col">NIC</th>
+                                <th scope="col">Address</th>
+                                <th scope="col">Email</th>
+                            </tr>
+                            </thead>
+                            <tbody id="Allcollectors" onclick="rowClicked(event)">
+                            </tbody>
+                        </table>
+                        <div class="submit-button">
+                            <button type="button" class="btn btn-success" onclick="deleteClient()" >Delete Client</button>
                         </div>
                     </div>
-                </button>
-            </div>
+                </div>
             </div>
         </div>
     </div>

@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shadow and Panel</title>
   <link rel="stylesheet" href="../style/requesting service 1.css">
+  <script src="../script/jquery-3.7.1.min.js"></script>
+  <script src="../script/RequestingService.js"></script>
   <style>
    
   </style>
@@ -69,22 +71,22 @@
         <form action="#" id="request-form">
           <div class="prediction-section">
               <div class="gray-rectangle">
-                  <input type="text" placeholder="Contact Number" name="contactNumber" required>
+                  <input type="text" id="contactNumber" placeholder="Contact Number" name="contactNumber" required>
                 </div>
                 <div class="gray-rectangle">
-                  <input type="text" placeholder="Location ID/Address" name="locationID" required>
+                  <input type="text" id="locationid" placeholder="Location ID/Address" name="locationID" required>
                 </div>
                 <div class="gray-rectangle">
-                  <input type="text" placeholder="Please explain required service" name="requiredService" required>
+                  <input type="text" id="requiredService" placeholder="Please explain required service" name="requiredService" required>
                 </div>
                 <div class="custom-rectangle">
-                  <input type="text" placeholder="Please explain current situation" name="currentSituation" required>
+                  <input type="text" id="currentSituation" placeholder="Please explain current situation" name="currentSituation" required>
                 </div>
           </div>
           
           <!-- Submit button -->
           <div class="submit-button">
-            <button type="submit" id="submit-btn">Submit</button>
+            <button type="submit" id="submit-btn" onclick="saveRequestingService()">Submit</button>
           </div>
         </form>
 

@@ -1,0 +1,371 @@
+/* Font Import - Add this to import Source Sans Pro font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #158F81 !important;
+}
+
+.panel {
+  display: flex;
+  width: 1222px;
+  height: 650px;
+  background-color: #5EBBB3;
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7);
+}
+
+.left-column {
+  flex: 1;
+  background-color: #CDE5DF;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-column {
+  flex: 3;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.header {
+  font-size: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.sub-header {
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-bottom: 20px;
+}
+
+.white-header {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 20px;
+  }
+
+.separator {
+  height: 2px;
+  width: 100%;
+  background-color: #565454;
+  margin-bottom: 20px;
+}
+
+.header,
+.sub-header,
+.separator {
+  white-space: nowrap;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-text {
+  font-size: 17px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.nav-icon {
+  width: 20px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.navigation a {
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+.nav-text {
+  font-size: 17px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  font-weight: bold;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.status-icon {
+  width: 60px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.status-text {
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+.upper-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+  }
+
+  .bell-icon {
+    width: 30px;
+    height: auto;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+
+  .upper-right {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+/* Add the following styles to your existing CSS */
+.button-container {
+  display: flex;
+  justify-content: center; /* Center the buttons */
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+.result-button {
+  flex: 1;
+  max-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+  font-size: 15px;
+  border: none;
+  background-color:pink;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-right: 20px; /* Adjust the margin between buttons */
+  margin-top: 5px;
+  height: 70px;
+  margin-bottom: 15px;
+}
+
+.result-button .nav-icon {
+  width: 40px; /* Adjust the width of the navigation icons as needed */
+  height: 40px; /* Adjust the height of the navigation icons as needed */
+  margin-right: 15px;
+  margin-left: 10px;
+}
+
+.button-number {
+  font-weight: bold;
+  font-size: 30px; /* Adjust the font size as needed */
+}
+
+.button-info {
+  text-align: center;
+  padding-right: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* Bold and increase size for the number "22" and "31" */
+.button-number {
+  text-align: right;
+  font-weight: bold;
+  font-size: 30px;
+  color: red;
+}
+
+.search-area {
+  display: flex;
+  align-items: center;
+  margin: 20px auto; /* Center the search area */
+}
+
+.search-box {
+  width: 600px; /* Adjust the width of the search box */
+  position: relative;
+}
+
+.search-icon {
+  width: 20px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.search-text {
+  border: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  outline: none;
+  width: calc(100% - 30px); /* Adjust the width to accommodate the search icon */
+  padding: 10px;
+  padding-left: 30px; /* Space for the search icon */
+  border-radius: 30px;
+  font-size: 13px;
+  background-color: #3A3055;
+  color: white;
+}
+
+.grey-rectangle {
+  position: relative;
+  background-color: #D3D3D3;
+  width: 600px;
+  height: 400px; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 20px auto 0; /* Adjust margin-top to move the grey rectangle up */
+  padding: 0 20px;
+  border-radius: 10px;
+}
+
+
+.circle-button {
+  width: 60px; /* Adjust size as needed */
+  height: 60px; /* Adjust size as needed */
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -200px; /* Adjust margin-top to move the circle button up */
+}
+
+.text {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  font-size: 18px; /* Adjust font size as needed */
+  margin-left: 20px; /* Adjust margin as needed */
+  margin-top: -200px; /* Adjust margin-top to move the text up */
+}
+
+
+.circle-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rectangle-button {
+  width: 150px; /* Adjust the width of the rectangular button */
+  height: 50px; /* Adjust the height of the rectangular button */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the left */
+  background-color: #CDE5DF; /* Background color of the button */
+  border-radius: 10px; /* Adjust the border radius as needed */
+  margin-left: 200px; /* Adjust the margin between the circle button and the rectangle button */
+  margin-top: -200px;
+}
+
+.rectangle-button img {
+  width: 30px; /* Adjust the width of the image inside the button */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 10px; /* Adjust the margin between the image and the button edge */
+}
+
+.button-text {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px; /* Adjust the font size of the button text */
+  color: black; /* Text color */
+  margin-left: 10px; /* Adjust the margin between the image and the text */
+}
+
+.text1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  font-size: 18px;
+  margin-top: -75px; /* Adjust margin-top to move the text below the circle button */
+  margin-left: -520px;
+}
+
+.green-rectangle {
+  position: relative;
+  background-color: #158F81; /* Green color */
+  width: 45%; /* Full width */
+  height: 150px; /* Adjust height as needed */
+  margin-top: 120px; /* Adjust margin-top to create space between text1 and the green rectangle */
+  margin-left: -60px;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+
+}
+
+
+.button-group {
+  position: absolute;
+  top: calc(100% + 10px); /* Position the button group just below the green rectangle */
+  left: 350px; /* Align the button group to the left side of the grey rectangle */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: -200px;
+
+}
+
+.details-button,
+.direction-button,
+.confirm-button
+ {
+  padding: 10px;
+  margin-top: 10px; /* Adjust margin as needed */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  width: 200%; /* Make buttons full width */
+  background-color: #158F81;
+}
+
+.details-button:hover,
+.confirm-button:hover,
+.direction-button:hover{
+  background-color: #B7D1C9; /* Change button background color on hover */
+}
+
